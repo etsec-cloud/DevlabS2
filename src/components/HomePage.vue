@@ -1,6 +1,9 @@
 <template>
 <div id="map">
- <MglMap :accessToken="accessToken" :mapStyle="mapStyle" />
+ <MglMap 
+    :accessToken="accessToken" 
+    :mapStyle="mapStyle"
+  />
 </div>
 </template>
 
@@ -17,7 +20,8 @@ export default {
     return {
       accessToken: 'pk.eyJ1IjoiZXQtc2VjIiwiYSI6ImNrOG9nZjJ0dDA0aXgzbXBzcjlzdnh2MDQifQ.VApXtOITuEEVc3pcjaUYxw', // your access token. Needed if you using Mapbox maps
       mapStyle: 'mapbox://styles/mapbox/light-v10', // your map style
-     
+      center:[139.6917100, 1.6895000],
+      
     };
     
   },
