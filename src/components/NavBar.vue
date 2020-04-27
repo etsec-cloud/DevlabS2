@@ -1,28 +1,65 @@
 <template>
     <nav>
-        <div class="menu-item"><a href="#">Accueil</a></div>
-        <div class="menu-item"><a href="#">Harajuku</a></div>
-        <div class="menu-item"><a href="#">Shinjuku</a></div>
-        <div class="menu-item"><a href="#">Asakusa</a></div>
-        <div class="menu-item"><a href="#">Shibuya</a></div>
+      
+          <router-link class="menu-item"
+            v-for="routes in links"
+            v-bind:key="routes.id"
+            :to="`${routes.page}`"
+            >{{ routes.text }}</router-link
+          >
+        
     </nav>
 </template>
 
 
 <script>
 export default {
-        name:'NavBar'
-    }
+    name:'NavBar',
+        data(){
+            return{
+                links: [
+                    {
+                        id: 0,
+                        text: 'Accueil',
+                        page:'/'
+                    },
+                    {
+                        id: 1,
+                        text: 'Harajuku',
+                        page:'/Harajuku'
+                    },
+                    {
+                        id: 2,
+                        text: 'Shinjuku',
+                        page:'/Shinjuku'
+                    },
+                    {
+                        id: 3,
+                        text: 'Asakusa',
+                        page:'/Asakusa'
+                    },
+                    {
+                        id: 4,
+                        text: 'Shibuya',
+                        page:'/Shibuya'
+                    }
+                ]
+
+            }
+        }
+}
+     
 </script>
 <style>
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    height: 5vh;
 }
+
 nav .menu-item.active,
-nav .menu-item:hover {
-}
+nav .menu-item:hover {}
 nav .menu-item {
     color: #000;
     padding: 10px 20px;
@@ -32,7 +69,7 @@ nav .menu-item {
     display: flex;
     transition: 0,4s;
 }
-nav .menu-item a {
+nav .menu-item  {
     color: inherit;
     text-decoration: none;
 }
