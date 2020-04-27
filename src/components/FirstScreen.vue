@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name : 'Quartier',
+  name : 'FirstScreen',
 };
 </script>
 
