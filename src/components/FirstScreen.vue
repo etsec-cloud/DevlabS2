@@ -1,12 +1,11 @@
 <template>
 
 <div class="wrapper">
-  <div class="flexContainer">
-    <h1>Shinjuku</h1>
-    <img class="kanji" src="./../assets/shinju.svg">
-  </div>
-    <span v-on:click="scroll" class="icone"></span>
-
+    <div class="flexContainer">
+      <h1>Shinjuku</h1>
+      <img class="kanji" src="./../assets/shinju.svg">
+    </div>
+      <span v-on:click="scroll" class="icone"></span>
 </div>
 </template>
 

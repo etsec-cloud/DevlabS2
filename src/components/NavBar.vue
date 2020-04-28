@@ -1,13 +1,11 @@
 <template>
     <nav>
-      
-          <router-link class="menu-item"
+        <router-link class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
             >{{ routes.text }}</router-link
           >
-        
     </nav>
 </template>
 
