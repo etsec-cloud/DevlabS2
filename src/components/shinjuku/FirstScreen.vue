@@ -1,11 +1,11 @@
 <template>
 
 <div class="wrapper">
-  <div class="flexContainer">
-    <h1>Asakusa</h1>
-  </div>
-    <span v-on:click="scroll" class="icone"></span>
-
+    <div class="flexContainer">
+      <h1>Shinjuku</h1>
+      <img class="kanji" src="./../../assets/shinju.svg">
+    </div>
+      <span v-on:click="scroll" class="icone"></span>
 </div>
 
 </template>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name : 'FirstScreenAsakusa',
+  name : 'FirstScreen',
   methods: {
     scroll: function() {
       var scrollIci = document.querySelector(".scrollIci");
@@ -33,7 +33,7 @@ export default {
  
 .wrapper {
   height:100vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../assets/asakusa.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

@@ -8,8 +8,8 @@
 
 <script>
 
-import FirstScreenAsakusa from './../components/FirstScreenAsakusa.vue'
-import SecondScreenAsakusa from './../components/SecondScreenAsakusa.vue'
+import FirstScreenAsakusa from './../components/assakusa/FirstScreenAsakusa'
+import SecondScreenAsakusa from './../components/assakusa/SecondScreenAsakusa.vue'
 
 export default {
   name : 'Asakusa',

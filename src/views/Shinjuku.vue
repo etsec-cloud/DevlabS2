@@ -8,8 +8,8 @@
 
 <script>
 
-import FirstScreen from './../components/FirstScreen.vue'
-import SecondScreen from './../components/SecondScreen.vue'
+import FirstScreen from './../components/shinjuku/FirstScreen.vue'
+import SecondScreen from './../components/shinjuku/SecondScreen.vue'
 
 export default {
   name : 'Shinjuku',
