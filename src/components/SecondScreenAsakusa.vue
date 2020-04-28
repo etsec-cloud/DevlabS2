@@ -2,8 +2,7 @@
 
 <div class="scrollIci wrapper">
   <div class="flexContainer">
-    <h1>Shinjuku</h1>
-    <img class="kanji" src="./../assets/shinju.svg">
+    <h1>Asakusa</h1>
   </div>
     <span class="icone"></span>
 
@@ -16,7 +15,7 @@
 
 <script>
 export default {
-  name : 'SecondScreen',
+  name : 'SecondScreenAsakusa',
 };
 </script>
 

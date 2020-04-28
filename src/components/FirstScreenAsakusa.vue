@@ -1,44 +1,49 @@
 <template>
 
-<div class="scrollIci wrapper">
+<div class="wrapper">
   <div class="flexContainer">
-    <h1>Shinjuku</h1>
-    <img class="kanji" src="./../assets/shinju.svg">
+    <h1>Asakusa</h1>
   </div>
-    <span class="icone"></span>
+    <span v-on:click="scroll" class="icone"></span>
 
 </div>
-
 
 </template>
 
 
 
+
 <script>
 export default {
-  name : 'SecondScreen',
+  name : 'FirstScreenAsakusa',
+  methods: {
+    scroll: function() {
+      var scrollIci = document.querySelector(".scrollIci");
+      scrollIci.scrollTop= scrollIci.scrollHeight; 
+    }
+  }
 };
 </script>
+
+
+
 
 
 <style scoped>
  
 .wrapper {
   height:100vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../assets/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-
   background-size: cover;}
 
 .flexContainer{
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
   align-items: center;
-
   color:white;
   font-size: 8em;
   line-height: 100px;
@@ -57,6 +62,8 @@ position :absolute;
 left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
+cursor: pointer ;
+
 }
 
 </style>
