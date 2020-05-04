@@ -6,22 +6,20 @@
       :center= "center"
       :zoom= "zoom"
       :pitch="pitch"
-
+      @mapbox-ready='setMap'
     >
-  
-   
-    <MglMarker class="popup"   :coordinates="coordinates" color="#3FB1CE"/>
 
+    <MglMarker class="popup" v-on:click="test"  :coordinates="coordinates" color="#3FB1CE"/>
+    
     </MglMap>
 
-
-  
 </div>
 </template>
 
 <script>
 import Mapbox from "mapbox-gl";
 import { MglMap,  MglMarker  } from "vue-mapbox";
+
 
 export default {
   name : 'HomePage',
@@ -31,11 +29,13 @@ export default {
   },
 
   methods: {
-
     test: function(){
       console.log("oui")
+      this.$router.push("Shinjuku")
+    },
 
-    }
+   
+
 
   },
   data() {
@@ -48,6 +48,8 @@ export default {
       //shibuya coordonnées
       coordinates: [139.7054, 35.6593],
     };
+    
+    
     
   },
 
