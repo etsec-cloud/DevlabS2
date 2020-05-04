@@ -9,9 +9,10 @@
 
     >
   
-  <MglMarker class="popup" v-on:click="popup"  :coordinates="coordinates" color="#3FB1CE"/>
-  </MglMap>
+   
+    <MglMarker class="popup"   :coordinates="coordinates" color="#3FB1CE"/>
 
+    </MglMap>
 
 
   
@@ -31,8 +32,9 @@ export default {
 
   methods: {
 
-    popup: function(){
+    test: function(){
       console.log("oui")
+
     }
 
   },

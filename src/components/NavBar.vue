@@ -57,7 +57,9 @@ nav{
 }
 
 nav .menu-item.active,
-nav .menu-item:hover {}
+nav .menu-item:hover {
+    
+}
 nav .menu-item {
     color: #000;
     padding: 10px 20px;
