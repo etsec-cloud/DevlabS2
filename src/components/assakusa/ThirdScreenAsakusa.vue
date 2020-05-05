@@ -86,7 +86,7 @@ export default {
 .imageMap{
   height: 20%;
   width: 50%;
-  background:url("./../../assets/mapAsakusa.jpg");
+  background:url("./../../assets/asakusaMap.jpg");
   background-position: center center;
   background-size: cover;
   margin-left: 25%;
@@ -100,7 +100,7 @@ export default {
 .image_left{
   height: 80%;
   width: 100%;
-  background:url("./../../assets/Asakusa2.jpg");
+  background:url("./../../assets/asakusa2.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -122,7 +122,7 @@ export default {
 .image_right{
   height: 80%;
   width: 100%;
-  background:url("./../../assets/Asakusa3.jpg");
+  background:url("./../../assets/asakusa3.jpg");
   background-position: center center;
   background-size:cover;
   margin-top: 50px;
