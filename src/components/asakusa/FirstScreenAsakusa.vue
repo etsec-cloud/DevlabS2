@@ -18,8 +18,13 @@ export default {
   name : 'FirstScreenAsakusa',
   methods: {
     scroll: function() {
-      var scrollIci = document.querySelector(".scrollIci");
-      scrollIci.scrollTop= scrollIci.scrollHeight; 
+
+      window.scrollTo({ 
+      top: window.innerHeight, // could be negative value
+      left: 0, 
+      behavior: 'smooth' 
+      });
+
     }
   }
 };
@@ -32,7 +37,7 @@ export default {
 <style scoped>
  
 .wrapper {
-  height:100vh;
+  height:95vh;
   background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
