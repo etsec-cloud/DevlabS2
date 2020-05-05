@@ -14,8 +14,7 @@ Mauris pulvinar et felis in sollicitudin. Mauris ultricies orci et ante dictum h
   </div>
 </template>
 
-
-<style scoped>
+<style >
 body{
   background-color: #191414;
 }
@@ -26,15 +25,8 @@ h1{
 
 .central-box{
     margin: 0 200px; 
-    color: rgb(0, 0, 0);
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align:justify;
-  color: #ffffff;
+    color: rgb(255, 255, 255);
+    text-align:justify;
 }
 
 </style>

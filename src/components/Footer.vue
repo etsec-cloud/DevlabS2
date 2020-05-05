@@ -14,34 +14,24 @@
 
 <script>
 export default {
-    name:'NavBar',
+    name:'Footer',
         data(){
             return{
                 links: [
                     {
                         id: 0,
-                        text: 'Accueil',
-                        page:'/'
+                        text: 'A propos',
+                        page:'/APropos'
                     },
                     {
                         id: 1,
-                        text: 'Harajuku',
-                        page:'/Harajuku'
+                        text: 'Mentions Légales',
+                        page:'/mentionslegales'
                     },
                     {
                         id: 2,
-                        text: 'Shinjuku',
-                        page:'/Shinjuku'
-                    },
-                    {
-                        id: 3,
-                        text: 'Asakusa',
-                        page:'/Asakusa'
-                    },
-                    {
-                        id: 4,
-                        text: 'Shibuya',
-                        page:'/Shibuya'
+                        text: 'Crédits',
+                        page:'/credits'
                     }
                 ]
 
@@ -51,11 +41,14 @@ export default {
      
 </script>
 <style>
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 5vh;
+footer{
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+    position:absolute;
+    bottom:auto;
+    width:100%;
+    padding-top:50px;
+    height:50px;
 }
 
 </style>

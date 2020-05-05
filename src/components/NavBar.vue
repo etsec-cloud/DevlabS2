@@ -56,6 +56,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     height: 5vh;
+    background-color: white;
 }
 
 nav .menu-item.active,
