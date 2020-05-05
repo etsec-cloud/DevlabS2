@@ -9,9 +9,11 @@
 
 <script>
 
+
 import FirstScreenAsakusa from './../components/asakusa/FirstScreenAsakusa'
 import SecondScreenAsakusa from './../components/asakusa/SecondScreenAsakusa.vue'
 import ThridScreenAsakusa from './../components/asakusa/ThirdScreenAsakusa.vue'
+
 
 
 export default {
