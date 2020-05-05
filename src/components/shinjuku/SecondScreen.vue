@@ -3,7 +3,7 @@
 <div class="scrollIci wrapper">
   <div class="flexContainer">
     <h1>Shinjuku</h1>
-    <img class="kanji" src="./../assets/shinju.svg">
+    <img class="kanji" src="./../../assets/shinju.svg">
   </div>
     <span class="icone"></span>
 
