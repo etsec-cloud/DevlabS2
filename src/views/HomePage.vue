@@ -1,19 +1,18 @@
 <template>
-<div id="map">
-  <MglMap 
-      :accessToken="accessToken" 
-      :mapStyle="mapStyle"
-      :center= "center"
-      :zoom= "zoom"
-      :pitch="pitch"
-      @mapbox-ready='setMap'
-    >
+  <div id="map">
+    <MglMap 
+        :accessToken="accessToken" 
+        :mapStyle="mapStyle"
+        :center= "center"
+        :zoom= "zoom"
+        :pitch="pitch"
+        @mapbox-ready='setMap'
+      >
 
-    <MglMarker class="popup" v-on:click="test"  :coordinates="coordinates" color="#3FB1CE"/>
-    
-    </MglMap>
+      <MglMarker class="popup" v-on:click="shinjuku"  :coordinates="coordinates" color="#3FB1CE"/>
+      </MglMap>
 
-</div>
+  </div>
 </template>
 
 <script>
@@ -29,15 +28,11 @@ export default {
   },
 
   methods: {
-    test: function(){
-      console.log("oui")
+    shinjuku: function(){
       this.$router.push("Shinjuku")
     },
-
-   
-
-
   },
+  
   data() {
     return {
       accessToken: 'pk.eyJ1IjoiZXQtc2VjIiwiYSI6ImNrOG9nZjJ0dDA0aXgzbXBzcjlzdnh2MDQifQ.VApXtOITuEEVc3pcjaUYxw', // your access token. Needed if you using Mapbox maps
@@ -48,9 +43,6 @@ export default {
       //shibuya coordonnées
       coordinates: [139.7054, 35.6593],
     };
-    
-    
-    
   },
 
   created() {
@@ -59,10 +51,6 @@ export default {
     
   }
 };
-
-
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
