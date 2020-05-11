@@ -1,12 +1,10 @@
 <template>
 
 <div class="wrapper">
-
-    <div class="flexContainer">
-      <h1>Shinjuku</h1>
-      <img class="kanji" src="./../../assets/shinju.svg">
-    </div>
-      <span v-on:click="scroll" class="icone"></span>
+  <div class="flexContainer">
+    <h1>Asakusa</h1>
+  </div>
+    <span v-on:click="scroll" class="icone"></span>
 
 </div>
 
@@ -17,16 +15,11 @@
 
 <script>
 export default {
-  name : 'FirstScreen',
+  name : 'FirstScreenAsakusa',
   methods: {
     scroll: function() {
-
-      window.scrollTo({ 
-      top: window.innerHeight, // could be negative value
-      left: 0, 
-      behavior: 'smooth' 
-      });
-
+      var scrollIci = document.querySelector(".scrollIci");
+      scrollIci.scrollTop= scrollIci.scrollHeight; 
     }
   }
 };
@@ -39,19 +32,12 @@ export default {
 <style scoped>
  
 .wrapper {
-
-  height:95vh;
-
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
+  height:100vh;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-
-  background-size: cover;
-  transition-duration: 1s;
-
-  }
-
+  background-size: cover;}
 
 .flexContainer{
   display: flex;
