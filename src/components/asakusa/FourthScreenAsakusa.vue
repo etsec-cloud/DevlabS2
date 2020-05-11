@@ -54,7 +54,6 @@ export default {
 
 .colonne1{
   width: 20%;
-  margin-top: 50px;
   justify-content: center;
 }
 
@@ -102,12 +101,10 @@ export default {
 
 .text2{
   text-align: center;
-  margin-top: 30px;
 }
 
 .colonne3{
   width: 37%;
-  margin-top: 50px;
 }
 
 .text3{
@@ -120,7 +117,6 @@ export default {
   background:url("./../../assets/asakusaPorte.jpg");
   background-position: center center;
   background-size:cover;
-  margin-top: 50px;
 }
 
 </style>

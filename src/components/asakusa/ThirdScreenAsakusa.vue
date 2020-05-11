@@ -54,7 +54,6 @@ export default {
 
 .colonne1{
   width: 20%;
-  margin-top: 50px;
   justify-content: center;
 }
 
@@ -102,7 +101,6 @@ export default {
 
 .text3{
   text-align: center;
-  margin-top: 30px;
 }
 
 .colonne3{
