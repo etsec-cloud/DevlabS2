@@ -5,13 +5,13 @@
   <div class="colonne1"></div>
 
   <div class="colonne2">
+    <div class="image_left3"></div>
     <div class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <div class="image_left2"></div>
   </div>
 
   <div class="colonne3">
-    <div class="image_right2"></div>
     <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="image_right3"></div>
   </div>
 
 <span v-on:mouseover="mouseOver" class="text1"></span>
@@ -71,11 +71,11 @@ export default {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-}
+  }
 
 .text1{
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .imageMap{
@@ -91,34 +91,36 @@ export default {
   width: 37%;
 }
 
-.image_left2{
+.image_left3{
   height: 70%;
   width: 100%;
-  background:url("./../../assets/nourriture_asakusa1.jpg");
+  background:url("./../../assets/asakusaMagasin.jpg");
   background-position: center center;
   background-size:contain;
   background-repeat: no-repeat;
 }
 
-.text3{
+.text2{
   text-align: center;
   margin-top: 30px;
 }
 
 .colonne3{
   width: 37%;
+  margin-top: 50px;
 }
 
-.text2{
+.text3{
   text-align: center;
 }
 
-.image_right2{
+.image_right3{
   height: 70%;
   width: 100%;
-  background:url("./../../assets/nourriture_asakusa2.jpg");
+  background:url("./../../assets/asakusaPorte.jpg");
   background-position: center center;
   background-size:cover;
+  margin-top: 50px;
 }
 
 </style>

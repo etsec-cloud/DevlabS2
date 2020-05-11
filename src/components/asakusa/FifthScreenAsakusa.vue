@@ -6,11 +6,11 @@
 
   <div class="colonne2">
     <div class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <div class="image_left2"></div>
+    <div class="image_left4"></div>
   </div>
 
   <div class="colonne3">
-    <div class="image_right2"></div>
+    <div class="image_right4"></div>
     <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
@@ -91,10 +91,10 @@ export default {
   width: 37%;
 }
 
-.image_left2{
+.image_left4{
   height: 70%;
   width: 100%;
-  background:url("./../../assets/nourriture_asakusa1.jpg");
+  background:url("./../../assets/asakusaPots.jpg");
   background-position: center center;
   background-size:contain;
   background-repeat: no-repeat;
@@ -113,10 +113,10 @@ export default {
   text-align: center;
 }
 
-.image_right2{
+.image_right4{
   height: 70%;
   width: 100%;
-  background:url("./../../assets/nourriture_asakusa2.jpg");
+  background:url("./../../assets/asakusaFood.jpg");
   background-position: center center;
   background-size:cover;
 }
