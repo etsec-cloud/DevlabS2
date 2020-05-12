@@ -18,8 +18,13 @@ export default {
   name : 'FirstScreenAsakusa',
   methods: {
     scroll: function() {
-      var scrollIci = document.querySelector(".scrollIci");
-      scrollIci.scrollTop= scrollIci.scrollHeight; 
+
+      window.scrollTo({ 
+      top: window.innerHeight, // could be negative value
+      left: 0, 
+      behavior: 'smooth' 
+      });
+
     }
   }
 };

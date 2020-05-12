@@ -4,15 +4,15 @@
 
   <div class="colonne1">
     <div id="menu">
-      <div class="imageMap"></div>
+      <div class="imageMap" src="./../../assets/asakusaMap.jpg"></div>
       <div class="trait"></div>
-      <div class="text1maj" href="./../../components/asakusa/SecondScreenAsakusa.vue">Culture/Evènement </div> 
+      <div class="text1maj" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
       <div class="trait"></div>
-      <div class="text1" href="./../../components/asakusa/ThirdScreenAsakusa.vue">Nourriture</div>
+      <div class="text1" v-scroll-to="'#text3'">Nourriture</div>
       <div class="trait"></div>
-      <div class="text1" href="./../../components/asakusa/FourthScreenAsakusa.vue">Lieux incontournables</div>
+      <div class="text1" v-scroll-to="'#text4bis'">Lieux incontournables</div>
       <div class="trait"></div>
-      <div class="text1" href="./../../components/asakusa/FifthScreenAsakusa.vue">Spécialité</div>
+      <div class="text1" v-scroll-to="'#text5'">Spécialité</div>
       <div class="trait"></div>
   </div>
 
@@ -20,11 +20,11 @@
 
   <div class="colonne2">
     <div class="image_left"></div>
-    <div class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
   <div class="colonne3">
-    <div class="text3">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text2bis">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_right"></div>
   </div>
 
@@ -55,9 +55,8 @@ export default {
       else {
         colonne1.classList.remove("sticky");
       }
-    }
-
-  },
+    },
+  }
 };
 
 </script>
@@ -108,7 +107,6 @@ export default {
 .imageMap{
   height: 20%;
   width: 50%;
-  background:url("./../../assets/asakusaMap.jpg");
   background-position: center center;
   background-size: cover;
   margin-left: 25%;
