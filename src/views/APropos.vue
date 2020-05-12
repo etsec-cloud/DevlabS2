@@ -1,6 +1,8 @@
 <template>
   <div class="central-box">
-      <h1>A Propos</h1><br>
+  <div class="text">
+      <h1>A Propos ||
+について</h1><br>
       <div class="dev">
           <p>Photos de nous + noms</p>
       </div>    
@@ -15,6 +17,7 @@ Pellentesque commodo leo eget dui interdum, vehicula imperdiet lectus bibendum. 
 Mauris pulvinar et felis in sollicitudin. Mauris ultricies orci et ante dictum hendrerit. In non ante lorem. Quisque pretium purus a arcu consequat mollis. Ut et massa imperdiet, pharetra lacus eget, viverra diam. Ut eu mauris blandit, rutrum dui at, euismod nulla. Cras ultrices ornare massa at venenatis. Nam est elit, posuere ut quam at, viverra venenatis mi. Nullam malesuada congue nunc, interdum pellentesque massa ornare et. Etiam ac hendrerit turpis. Praesent facilisis at nisi eu vulputate.</p>
     <router-view/>
   </div>
+  </div>
 </template>
 
 
@@ -28,8 +31,16 @@ h1{
 }
 
 .central-box{
-    margin: 0 200px; 
-    color: rgb(0, 0, 0);
+    margin: 80px 200px; 
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 5px;
+    border-color: #191414 #191414 #191414 white;
+}
+
+.text{
+  margin: 40px 60px;
+  text-align: justify;
 }
 
 .dev{
