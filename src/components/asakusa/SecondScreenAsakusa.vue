@@ -2,17 +2,20 @@
 
 <div class="container">
 
-  <div class="colonne1" id="menu">
-    <div class="imageMap"></div>
-    <div class="trait"></div>
-    <div class="text1maj" href="./../../components/asakusa/SecondScreenAsakusa.vue">Culture/Evènement </div> 
-    <div class="trait"></div>
-    <div class="text1" href="./../../components/asakusa/ThirdScreenAsakusa.vue">Nourriture</div>
-    <div class="trait"></div>
-    <div class="text1" href="./../../components/asakusa/FourthScreenAsakusa.vue">Lieux incontournables</div>
-    <div class="trait"></div>
-    <div class="text1" href="./../../components/asakusa/FifthScreenAsakusa.vue">Spécialité</div>
-    <div class="trait"></div>
+  <div class="colonne1">
+    <div id="menu">
+      <div class="imageMap"></div>
+      <div class="trait"></div>
+      <div class="text1maj" href="./../../components/asakusa/SecondScreenAsakusa.vue">Culture/Evènement </div> 
+      <div class="trait"></div>
+      <div class="text1" href="./../../components/asakusa/ThirdScreenAsakusa.vue">Nourriture</div>
+      <div class="trait"></div>
+      <div class="text1" href="./../../components/asakusa/FourthScreenAsakusa.vue">Lieux incontournables</div>
+      <div class="trait"></div>
+      <div class="text1" href="./../../components/asakusa/FifthScreenAsakusa.vue">Spécialité</div>
+      <div class="trait"></div>
+  </div>
+
   </div>
 
   <div class="colonne2">
@@ -21,11 +24,10 @@
   </div>
 
   <div class="colonne3">
-    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="text3">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_right"></div>
   </div>
 
-  <span v-on:scroll="stickymenu"></span>
 
 </div>
 
@@ -34,17 +36,27 @@
 <script>
 export default {
   name : 'SecondScreenAsakusa',
+  created () {
+    window.addEventListener('scroll', this.stickymenu);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.stickymenu);
+  },
+
   methods: {
     stickymenu: function(){
+      console.log("grj");
+
       var colonne1 = document.getElementById("menu");
       var sticky = colonne1.offsetTop;
-    if (window.pageYOffset > sticky) {
-    colonne1.classList.add("sticky");
-  } else {
-    colonne1.classList.remove("sticky");
-  }
-  console.log("grj");
+      if (window.pageYOffset > sticky) {
+        colonne1.classList.add("sticky");
+      } 
+      else {
+        colonne1.classList.remove("sticky");
+      }
     }
+
   },
 };
 
@@ -64,7 +76,7 @@ export default {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  left:0;
 }
 
 .colonne1{
