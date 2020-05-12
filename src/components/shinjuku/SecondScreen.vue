@@ -1,62 +1,131 @@
 <template>
 
-<div class="scrollIci wrapper">
-  <div class="flexContainer">
-    <h1>Shinjuku</h1>
-    <img class="kanji" src="./../../assets/shinju.svg">
+<div class="container">
+
+  <div class="colonne1">
+    <div class="imageMap"></div>
+    <div class="trait"></div>
+    <div class="text1">Culture/Evènement</div> 
+    <div class="trait"></div>
+    <div class="text1">Nourriture</div>
+    <div class="trait"></div>
+    <div class="text1">Lieux incontournables</div>
+    <div class="trait"></div>
+    <div class="text1">Spécialité</div>
+    <div class="trait"></div>
   </div>
-    <span class="icone"></span>
+
+  <div class="colonne2">
+    <div class="image_left"></div>
+    <div class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  </div>
+
+  <div class="colonne3">
+    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="image_right"></div>
+  </div>
+
+<span v-on:mouseover="mouseOver" class="text1"></span>
 
 </div>
 
-
 </template>
+
 
 
 
 <script>
 export default {
   name : 'SecondScreen',
+  methods: {
+    scroll: function() {
+      var scrollIci = document.querySelector(".scrollIci");
+      scrollIci.scrollTop= scrollIci.scrollHeight; 
+    },
+
+    mouseOver: function() {
+      document.getElementById("text1").style.color = "red";
+    },
+  }
 };
+
+
 </script>
 
 
-<style scoped>
- 
-.wrapper {
+<style>
+
+.container{
   height:100vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-
-  background-size: cover;}
-
-.flexContainer{
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-around;
-  align-items: center;
-
-  color:white;
-  font-size: 8em;
-  line-height: 100px;
-}
-.kanji{
-  width: 50vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
-.icone {
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 40px 20px 0 20px;
-border-color: #ffffff transparent transparent transparent;
-position :absolute;
-left: 50%;
-bottom: 5%;
-transform: translate(0%, -50%);
+.colonne1{
+  width: 20%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.trait{
+  background-color: black;
+  height: 3px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.text1{
+  text-align: center;
+  font-size: 25px;
+}
+
+.imageMap{
+  height: 20%;
+  width: 50%;
+  background:url("./../../assets/asakusaMap.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin-left: 25%;
+}
+
+.colonne2{
+  width: 37%;
+  margin-top: 50px;
+}
+
+.image_left{
+  height: 80%;
+  width: 100%;
+  background:url("./../../assets/asakusa2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.text2{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.colonne3{
+  width: 37%;
+  margin-top: 50px;
+}
+
+.text3{
+  text-align: center;
+}
+
+.image_right{
+  height: 80%;
+  width: 100%;
+  background:url("./../../assets/asakusa3.jpg");
+  background-position: center center;
+  background-size:cover;
+  margin-top: 50px;
 }
 
 </style>

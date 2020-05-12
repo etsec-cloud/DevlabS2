@@ -19,6 +19,7 @@
 export default {
   name : 'FirstScreen',
   methods: {
+    
     scroll: function() {
 
       window.scrollTo({ 
@@ -26,8 +27,8 @@ export default {
       left: 0, 
       behavior: 'smooth' 
       });
-
     }
+
   }
 };
 </script>

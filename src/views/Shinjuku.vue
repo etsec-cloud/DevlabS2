@@ -17,7 +17,6 @@ export default {
     FirstScreen,
     SecondScreen
     },
-  
 };
 </script>
 
