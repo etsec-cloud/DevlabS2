@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <footer>
       
           <router-link class="menu-item"
             v-for="routes in links"
@@ -8,7 +8,7 @@
             >{{ routes.text }}</router-link
           >
         
-    </nav>
+    </footer>
 </template>
 
 
@@ -42,13 +42,19 @@ export default {
 </script>
 <style>
 footer{
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(158, 158, 158);
     color: rgb(0, 0, 0);
     position:absolute;
     bottom:auto;
     width:100%;
-    padding-top:50px;
-    height:50px;
+    padding-top:20px;
+    height:30px;
+}
+
+footer .menu-item  {
+    color: inherit;
+    padding: 20px 30px;
+    text-decoration: none;
 }
 
 </style>
