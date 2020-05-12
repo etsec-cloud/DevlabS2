@@ -11,25 +11,23 @@
 
       <MglMarker class="popup" v-on:click="shinjuku"  :coordinates="coordinates" color="#3FB1CE"/>
 
-        <VueMapboxFeature
-                :map='map'
-                :uid='"line-example"'
-                :layer-type='"line"'
-                :feature='lineGeom'
-                :paint='linePaint'
-        ></VueMapboxFeature>
+        <MglGeojsonLayer
+            :sourceId="geoJsonSource.id"
+            :source="geoJsonSource"
+            layerId="myLayer"
+            :layer="geoJsonlayer"
+              
+        ></MglGeojsonLayer>
       
       </MglMap>
-     <div v-if='map'>
-       
-     </div>
+  
   </div>
 </template>
 
 <script>
 import Mapbox from "mapbox-gl";
-import { MglMap,  MglMarker  } from "vue-mapbox";
-import VueMapboxFeature from 'vue-mapbox-feature';
+import { MglMap,  MglMarker,  MglGeojsonLayer  } from "vue-mapbox";
+
 
 
 export default {
@@ -37,7 +35,7 @@ export default {
   components: {
     MglMap,
     MglMarker ,
-    VueMapboxFeature
+    MglGeojsonLayer
   },
 
   methods: {
@@ -60,24 +58,12 @@ export default {
      
       //shibuya coordonnées
       coordinates: [139.7054, 35.6593],
-      linePaint: {
-          'line-opacity': 1,
-          'line-color': '#29434e',
-          'line-width': 4,
-          'line-dasharray': [1, 2],
-          'line-blur': 0
-        },
-    };
-  },
-  
-  computed: {
-    lineGeom() {
-      return{
-        type: 'Feature',
+
+      geoJsonSource:{
+         type: 'Feature',
           geometry: {
             type: 'fill',
             coordinates: [
-
                 [139.791974, 35.711463 ],
                 [ 139.792124, 35.719825],
                 [139.792510, 35.720013],
@@ -90,6 +76,26 @@ export default {
                 [35.710739, 139.797694]
             ]
           }
+
+      },
+      geoJsonLayer: {
+        'id': 'route',
+        'type': 'fill',
+        'source': 'route',
+        'layout': {},
+        'paint': {
+          'fill-color': '#088',
+          'fill-opacity': 0.8
+        }
+      }
+      
+    };
+  },
+  
+  computed: {
+    lineGeom() {
+      return{
+       
         }
       }
     },
