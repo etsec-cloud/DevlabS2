@@ -117,6 +117,7 @@ export default {
   background:url("./../../assets/nourriture_asakusa2.jpg");
   background-position: center center;
   background-size:cover;
+  margin-bottom: 30px;
 }
 
 </style>

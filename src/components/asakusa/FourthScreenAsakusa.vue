@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name : 'ThirdScreenAsakusa',
+  name : 'FourthScreenAsakusa',
   methods: {
     scroll: function() {
       var scrollIci = document.querySelector(".scrollIci");
@@ -117,6 +117,7 @@ export default {
   background:url("./../../assets/asakusaPorte.jpg");
   background-position: center center;
   background-size:cover;
+  margin-top: 30px;
 }
 
 </style>

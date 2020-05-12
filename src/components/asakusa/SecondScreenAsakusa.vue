@@ -2,16 +2,16 @@
 
 <div class="container">
 
-  <div class="colonne1">
+  <div class="colonne1" id="menu">
     <div class="imageMap"></div>
     <div class="trait"></div>
-    <div class="text1maj">Culture/Evènement</div> 
+    <div class="text1maj" href="./../../components/asakusa/SecondScreenAsakusa.vue">Culture/Evènement </div> 
     <div class="trait"></div>
-    <div class="text1">Nourriture</div>
+    <div class="text1" href="./../../components/asakusa/ThirdScreenAsakusa.vue">Nourriture</div>
     <div class="trait"></div>
-    <div class="text1">Lieux incontournables</div>
+    <div class="text1" href="./../../components/asakusa/FourthScreenAsakusa.vue">Lieux incontournables</div>
     <div class="trait"></div>
-    <div class="text1">Spécialité</div>
+    <div class="text1" href="./../../components/asakusa/FifthScreenAsakusa.vue">Spécialité</div>
     <div class="trait"></div>
   </div>
 
@@ -25,30 +25,28 @@
     <div class="image_right"></div>
   </div>
 
-<span v-on:mouseover="mouseOver" class="text1"></span>
+  <span v-on:scroll="stickymenu"></span>
 
 </div>
 
 </template>
 
-
-
-
 <script>
 export default {
-  name : 'ThirdScreenAsakusa',
+  name : 'SecondScreenAsakusa',
   methods: {
-    scroll: function() {
-      var scrollIci = document.querySelector(".scrollIci");
-      scrollIci.scrollTop= scrollIci.scrollHeight; 
-    },
-
-    mouseOver: function() {
-      document.getElementById("text1").style.color = "red";
-    },
+    stickymenu: function(){
+      var colonne1 = document.getElementById("menu");
+      var sticky = colonne1.offsetTop;
+    if (window.pageYOffset > sticky) {
+    colonne1.classList.add("sticky");
+  } else {
+    colonne1.classList.remove("sticky");
   }
+  console.log("grj");
+    }
+  },
 };
-
 
 </script>
 
@@ -61,6 +59,12 @@ export default {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .colonne1{
@@ -133,7 +137,5 @@ export default {
   background-size:cover;
   margin-top: 50px;
 }
-
-
 
 </style>
