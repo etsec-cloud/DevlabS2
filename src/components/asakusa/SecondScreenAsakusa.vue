@@ -1,10 +1,17 @@
 <template>
 
 <div class="container">
-
   <div class="colonne1">
-    <div id="menu">
-      <div> <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> </div>
+    <div id="menu" >
+      <div  
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+       >
+         
+
+        <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> 
+      </div>
       <div class="trait"></div>
       <div class="text1maj" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
       <div class="trait"></div>
@@ -35,6 +42,11 @@
 
 <script>
 export default {
+  data() {
+    return{
+      hover: false,
+    }
+  },
   name : 'SecondScreenAsakusa',
   created () {
     window.addEventListener('scroll', this.stickymenu);
@@ -67,6 +79,13 @@ export default {
 
 <style>
 
+.active {
+  position:absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
 .container{
   height:100vh;
 	display: flex;
@@ -149,6 +168,19 @@ export default {
   background-position: center center;
   background-size:cover;
   margin-top: 50px;
+}
+@media screen and (max-width: 900px) {
+
+  .container{
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+
+  }
+  #menu{
+  display: flex;
+  flex-direction: row;
+  }
 }
 
 </style>
