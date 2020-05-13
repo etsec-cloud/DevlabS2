@@ -53,6 +53,7 @@ export default {
   font-size: 8em;
   line-height: 100px;
 }
+
 .kanji{
   width: 50vw;
 }
@@ -68,7 +69,6 @@ left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
 cursor: pointer ;
-
 }
 
 </style>

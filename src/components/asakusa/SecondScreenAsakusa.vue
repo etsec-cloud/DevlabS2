@@ -1,10 +1,17 @@
 <template>
 
 <div class="container">
-
   <div class="colonne1">
-    <div id="menu">
-      <div class="imageMap" src="./../../assets/asakusaMap.jpg"></div>
+    <div id="menu" >
+      <div  
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+       >
+         
+
+        <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> 
+      </div>
       <div class="trait"></div>
       <div class="text1maj" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
       <div class="trait"></div>
@@ -35,6 +42,11 @@
 
 <script>
 export default {
+  data() {
+    return{
+      hover: false,
+    }
+  },
   name : 'SecondScreenAsakusa',
   created () {
     window.addEventListener('scroll', this.stickymenu);
@@ -45,16 +57,19 @@ export default {
 
   methods: {
     stickymenu: function(){
-      console.log("grj");
 
       var colonne1 = document.getElementById("menu");
-      var sticky = colonne1.offsetTop;
-      if (window.pageYOffset > sticky) {
+      var sticky = colonne1.offsetHeight;
+      var lo = 250;
+      
+      if (window.pageYOffset - lo > sticky) {
         colonne1.classList.add("sticky");
-      } 
-      else {
+      }
+
+      else{
         colonne1.classList.remove("sticky");
       }
+
     },
   }
 };
@@ -64,6 +79,13 @@ export default {
 
 <style>
 
+.active {
+  position:absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
 .container{
   height:100vh;
 	display: flex;
@@ -75,13 +97,16 @@ export default {
 .sticky {
   position: fixed;
   top: 0;
-  left:0;
+  width: 20%;
+  margin-top: 50px;
 }
 
 .colonne1{
   width: 20%;
   margin-top: 50px;
   justify-content: center;
+  transition-duration:1s,
+
 }
 
 .trait{
@@ -105,11 +130,8 @@ export default {
 }
 
 .imageMap{
-  height: 20%;
   width: 50%;
-  background-position: center center;
-  background-size: cover;
-  margin-left: 25%;
+  
 }
 
 .colonne2{
@@ -146,6 +168,19 @@ export default {
   background-position: center center;
   background-size:cover;
   margin-top: 50px;
+}
+@media screen and (max-width: 900px) {
+
+  .container{
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+
+  }
+  #menu{
+  display: flex;
+  flex-direction: row;
+  }
 }
 
 </style>
