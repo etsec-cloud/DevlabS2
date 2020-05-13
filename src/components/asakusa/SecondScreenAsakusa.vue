@@ -4,7 +4,7 @@
 
   <div class="colonne1">
     <div id="menu">
-      <div class="imageMap" src="./../../assets/asakusaMap.jpg"></div>
+      <div> <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> </div>
       <div class="trait"></div>
       <div class="text1maj" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
       <div class="trait"></div>
@@ -45,16 +45,19 @@ export default {
 
   methods: {
     stickymenu: function(){
-      console.log("grj");
 
       var colonne1 = document.getElementById("menu");
-      var sticky = colonne1.offsetTop;
-      if (window.pageYOffset > sticky) {
+      var sticky = colonne1.offsetHeight;
+      var lo = 250;
+      
+      if (window.pageYOffset - lo > sticky) {
         colonne1.classList.add("sticky");
-      } 
-      else {
+      }
+
+      else{
         colonne1.classList.remove("sticky");
       }
+
     },
   }
 };
@@ -75,13 +78,16 @@ export default {
 .sticky {
   position: fixed;
   top: 0;
-  left:0;
+  width: 20%;
+  margin-top: 50px;
 }
 
 .colonne1{
   width: 20%;
   margin-top: 50px;
   justify-content: center;
+  transition-duration:1s,
+
 }
 
 .trait{
@@ -105,11 +111,8 @@ export default {
 }
 
 .imageMap{
-  height: 20%;
   width: 50%;
-  background-position: center center;
-  background-size: cover;
-  margin-left: 25%;
+  
 }
 
 .colonne2{
