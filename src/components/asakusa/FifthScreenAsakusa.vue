@@ -99,7 +99,7 @@ export default {
   background-repeat: no-repeat;
 }
 
-.text3{
+.text5{
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ export default {
   width: 37%;
 }
 
-.text2{
+.text5bis{
   text-align: center;
 }
 

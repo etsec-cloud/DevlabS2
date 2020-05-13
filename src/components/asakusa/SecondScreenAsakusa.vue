@@ -135,7 +135,7 @@ export default {
   margin-top: 50px;
 }
 
-.text3{
+.text2bis{
   text-align: center;
 }
 
