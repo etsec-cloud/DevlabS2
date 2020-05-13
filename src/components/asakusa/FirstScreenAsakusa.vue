@@ -3,6 +3,7 @@
 <div class="wrapper">
   <div class="flexContainer">
     <h1>Asakusa</h1>
+    <img class="kanji" src="./../../assets/asakusa.svg">
   </div>
     <span v-on:click="scroll" class="icone"></span>
 
