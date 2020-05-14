@@ -13,7 +13,7 @@
         <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> 
       </div>
       <div class="trait"></div>
-      <div class="text1maj" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
+      <div class="text1" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
       <div class="trait"></div>
       <div class="text1" v-scroll-to="'#text3'">Nourriture</div>
       <div class="trait"></div>
@@ -71,6 +71,23 @@ export default {
       }
 
     },
+
+  Bold: function(){
+
+      var text1 = document.getElementById("text1maj");
+      var text1maj = text1.offsetHeight;
+      var lo = 50;
+      
+      if (window.pageYOffset - lo > text1maj) {
+        text1.classList.add("text1maj");
+      }
+
+      else{
+        text1.classList.remove("text1maj");
+      }
+
+    },
+
   }
 };
 
@@ -85,6 +102,8 @@ export default {
   left: 50%; 
   transform: translate(-50%, -50%);
   width: 100vw;
+  margin-left: 40vw;
+  margin-top: 5vw;
 }
 .container{
   height:100vh;
