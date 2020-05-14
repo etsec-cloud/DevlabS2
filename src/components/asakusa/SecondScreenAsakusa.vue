@@ -82,12 +82,6 @@ export default {
       var id3 = document.getElementById('3');
       var id4 = document.getElementById('4');
 
-
-      
-
-
-
-      
       if (window.pageYOffset > (colonne1.offsetTop))  { 
           id1.classList.add("text1maj");
       }
@@ -105,6 +99,7 @@ export default {
         id3.classList.remove("text1maj");
         id4.classList.add("text1maj");
       }
+
 
       if (window.pageYOffset < (colonne4.offsetTop )){
         id4.classList.remove("text1maj");
@@ -169,6 +164,7 @@ ul{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
+  padding-bottom: 30px;
 }
 
 .sticky {
