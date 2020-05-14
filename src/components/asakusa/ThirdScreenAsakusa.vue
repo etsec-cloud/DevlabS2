@@ -98,7 +98,7 @@ export default {
   width: 37%;
 }
 
-.text2{
+.text3bis{
   text-align: center;
 }
 
