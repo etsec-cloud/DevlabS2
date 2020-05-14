@@ -106,9 +106,23 @@ export default {
         id4.classList.add("text1maj");
       }
 
-      
-      
+      if (window.pageYOffset < (colonne4.offsetTop )){
+        id4.classList.remove("text1maj");
 
+      }
+      if (window.pageYOffset < (colonne3.offsetTop )){
+        id3.classList.remove("text1maj");
+
+      }
+      if (window.pageYOffset < (colonne2.offsetTop )){
+        id2.classList.remove("text1maj");
+
+      }
+      if (window.pageYOffset < (colonne1.offsetTop )){
+        id1.classList.remove("text1maj");
+
+      }
+    
     },
 
     stickymenu: function(){
