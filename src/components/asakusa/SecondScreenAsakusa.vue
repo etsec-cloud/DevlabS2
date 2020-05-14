@@ -25,9 +25,10 @@
 
   </div>
 
-  <div class="colonne2">
+  <div id="lol" class="colonne2">
+    <h1  >Culture/Evènement</h1>
     <div class="image_left"></div>
-    <div id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text2">Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
   <div class="colonne3">
@@ -50,19 +51,46 @@ export default {
   name : 'SecondScreenAsakusa',
   created () {
     window.addEventListener('scroll', this.stickymenu);
+    window.addEventListener('scroll', this.bold);
+
+
   },
   destroyed () {
     window.removeEventListener('scroll', this.stickymenu);
+    window.removeEventListener('scroll', this.bold);
+
+
   },
 
   methods: {
+
+   bold: function(){
+
+      var colonne1 = document.getElementById("lol");
+      var coul = document.querySelector('.text1');
+      var bold = colonne1.offsetHeight;
+      
+      if (window.pageYOffset >= bold) {
+        coul.classList.add("text1maj");
+      }
+
+      else if (window.pageYOffset < bold){
+        coul.classList.remove("text1maj");
+      }
+
+    },
+
     stickymenu: function(){
 
       var colonne1 = document.getElementById("menu");
+      var coul = document.getElementById("lol");
       var sticky = colonne1.offsetHeight;
+
       var lo = 250;
       
       if (window.pageYOffset - lo > sticky) {
+        console.log(coul.offsetHeight)
+        
         colonne1.classList.add("sticky");
       }
 
