@@ -1,37 +1,40 @@
 <template>
 
 <div class="container">
-  <div class="colonne1">
-    <div id="menu" >
-      <div  
+  <ul id="list" class="colonne1">
+    <div id="menu">
+    
+      <li
         @mouseover="hover = true"
         @mouseleave="hover = false"
         :class="{ active: hover }"
-       >
-         
+       >   
+       
+        <img class="imageMap" src="./../../assets/asakusaMap.jpg"/> 
+      </li>
 
-        <img class="imageMap" src="./../../assets/asakusaMap.jpg" /> 
-      </div>
-      <div class="trait"></div>
-      <div class="text1" v-scroll-to="'#text2bis'">Culture/Evènement </div> 
-      <div class="trait"></div>
-      <div class="text1" v-scroll-to="'#text3'">Nourriture</div>
-      <div class="trait"></div>
-      <div class="text1" v-scroll-to="'#text4bis'">Lieux incontournables</div>
-      <div class="trait"></div>
-      <div class="text1" v-scroll-to="'#text5'">Spécialité</div>
-      <div class="trait"></div>
-  </div>
+      <li        class="trait"></li>
+      <li id="1" class="text1" v-scroll-to="'#text2bis'">Culture/Evènement </li> 
+      <li        class="trait"></li>
+      <li id="2" class="text1" v-scroll-to="'#text3'">Nourriture</li>
+      <li        class="trait"></li>
+      <li id="3" class="text1" v-scroll-to="'#text4bis'">Lieux incontournables</li>
+      <li        class="trait"></li>
+      <li id="4" class="text1" v-scroll-to="'#text5'">Spécialité</li>
+      <li        class="trait"></li>
+    </div>
+  </ul>
+  
 
-  </div>
-
-  <div id="lol" class="colonne2">
-    <h1  >Culture/Evènement</h1>
+<span id="lol"></span>
+  <div  class="colonne2">
+    <h1>Culture/Evènement</h1>
     <div class="image_left"></div>
     <div id="text2">Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
-  <div class="colonne3">
+  <div  class="colonne3">
+   
     <div id="text2bis">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_right"></div>
   </div>
@@ -66,31 +69,56 @@ export default {
 
    bold: function(){
 
+     //element dans le container
+
       var colonne1 = document.getElementById("lol");
-      var coul = document.querySelector('.text1');
-      var bold = colonne1.offsetHeight;
+      var colonne2 = document.getElementById("dota");
+      var colonne3 = document.getElementById("cs");
+      var colonne4 = document.getElementById("vcs");
+
+      //element dans le menu
+      var id1 = document.getElementById('1');
+      var id2 = document.getElementById('2');
+      var id3 = document.getElementById('3');
+      var id4 = document.getElementById('4');
+
+
       
-      if (window.pageYOffset >= bold) {
-        coul.classList.add("text1maj");
+
+
+
+      
+      if (window.pageYOffset > (colonne1.offsetTop))  { 
+          id1.classList.add("text1maj");
       }
 
-      else if (window.pageYOffset < bold){
-        coul.classList.remove("text1maj");
+      if (window.pageYOffset > (colonne2.offsetTop)) {
+          id1.classList.remove("text1maj");
+          id2.classList.add("text1maj");
       }
+
+      if (window.pageYOffset > (colonne3.offsetTop )){
+        id2.classList.remove("text1maj");
+        id3.classList.add("text1maj");
+      }
+      if (window.pageYOffset > (colonne4.offsetTop )){
+        id3.classList.remove("text1maj");
+        id4.classList.add("text1maj");
+      }
+
+      
+      
 
     },
 
     stickymenu: function(){
 
       var colonne1 = document.getElementById("menu");
-      var coul = document.getElementById("lol");
       var sticky = colonne1.offsetHeight;
 
       var lo = 250;
       
       if (window.pageYOffset - lo > sticky) {
-        console.log(coul.offsetHeight)
-        
         colonne1.classList.add("sticky");
       }
 
@@ -106,6 +134,13 @@ export default {
 
 
 <style>
+li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
 
 .active {
   position:absolute;
