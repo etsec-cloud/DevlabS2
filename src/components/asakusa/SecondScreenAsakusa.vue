@@ -14,13 +14,13 @@
       </li>
 
       <li        class="trait"></li>
-      <li id="1" class="text1" v-scroll-to="'#h2'">Culture/Evènement </li> 
+      <li id="1" class="text1" v-scroll-to="'#h1'">Culture/Evènement </li> 
       <li        class="trait"></li>
-      <li id="2" class="text1" v-scroll-to="'#h3'">Nourriture</li>
+      <li id="2" class="text1" v-scroll-to="'#h2'">Nourriture</li>
       <li        class="trait"></li>
-      <li id="3" class="text1" v-scroll-to="'#h4'">Lieux incontournables</li>
+      <li id="3" class="text1" v-scroll-to="'#h3'">Lieux incontournables</li>
       <li        class="trait"></li>
-      <li id="4" class="text1" v-scroll-to="'#h5'">Spécialité</li>
+      <li id="4" class="text1" v-scroll-to="'#h4'">Spécialité</li>
       <li        class="trait"></li>
     </div>
   </ul>
@@ -29,7 +29,7 @@
   <div class="colonne2">
     <h1 id="h1"><FONT size="10pt"><U>Culture/Evènement</U></FONT></h1>
     <div class="image_left"></div>
-    <div id="text2">Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div id="text2">Lorem  ici all ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
   </div>
 
   <div  class="colonne3">
@@ -126,13 +126,13 @@ ul{
   padding: 0;
 }
 .active {
-  position:absolute;
+  position:static;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   width: 90vw;
-  margin-left: 40vw;
-  margin-top: 15vh;
+  margin-left: 52vw;
+  margin-top: 45vh;
 }
 .container{
   height:100px;
