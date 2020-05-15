@@ -62,16 +62,27 @@ export default {
   },
   methods: {
    bold: function(){
+<<<<<<< HEAD
      //element dans le container
+=======
+
+     //element dans le container
+
+>>>>>>> e81574c43458fce62c0227d7af77c63d39068d20
       var colonne1 = document.getElementById("lol");
       var colonne2 = document.getElementById("dota");
       var colonne3 = document.getElementById("cs");
       var colonne4 = document.getElementById("vcs");
+<<<<<<< HEAD
+=======
+
+>>>>>>> e81574c43458fce62c0227d7af77c63d39068d20
       //element dans le menu
       var id1 = document.getElementById('1');
       var id2 = document.getElementById('2');
       var id3 = document.getElementById('3');
       var id4 = document.getElementById('4');
+<<<<<<< HEAD
       if (window.pageYOffset > (colonne1.offsetTop))  { 
           id1.classList.add("text1maj");
       }
@@ -98,6 +109,43 @@ export default {
       }
       if (window.pageYOffset < (colonne1.offsetTop )){
         id1.classList.remove("text1maj");
+=======
+
+      if (window.pageYOffset > (colonne1.offsetTop))  { 
+          id1.classList.add("text1maj");
+      }
+
+      if (window.pageYOffset > (colonne2.offsetTop)) {
+          id1.classList.remove("text1maj");
+          id2.classList.add("text1maj");
+      }
+
+      if (window.pageYOffset > (colonne3.offsetTop )){
+        id2.classList.remove("text1maj");
+        id3.classList.add("text1maj");
+      }
+      if (window.pageYOffset > (colonne4.offsetTop )){
+        id3.classList.remove("text1maj");
+        id4.classList.add("text1maj");
+      }
+
+
+      if (window.pageYOffset < (colonne4.offsetTop )){
+        id4.classList.remove("text1maj");
+
+      }
+      if (window.pageYOffset < (colonne3.offsetTop )){
+        id3.classList.remove("text1maj");
+
+      }
+      if (window.pageYOffset < (colonne2.offsetTop )){
+        id2.classList.remove("text1maj");
+
+      }
+      if (window.pageYOffset < (colonne1.offsetTop )){
+        id1.classList.remove("text1maj");
+
+>>>>>>> e81574c43458fce62c0227d7af77c63d39068d20
       }
     
     },
@@ -126,6 +174,10 @@ ul{
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e81574c43458fce62c0227d7af77c63d39068d20
 .active {
   position:absolute;
   top: 50%; 
