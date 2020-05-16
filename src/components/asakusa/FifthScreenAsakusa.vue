@@ -1,16 +1,15 @@
 <template>
 
 <div class="container">
-
   <div class="colonne1"></div>
 
-  <div id ="vcs" class="colonne2">
-    <h1>Spécialité</h1>
+  <div id="vcs" class="colonne8">
+    <h1 id="h4"><FONT size="10pt"><U>Spécialités</U></FONT></h1>
     <div id="text5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_left4"></div>
   </div>
 
-  <div class="colonne3">
+  <div class="colonne9">
     <div class="image_right4"></div>
     <div id="text5bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
@@ -58,28 +57,12 @@ export default {
   justify-content: center;
 }
 
-.trait{
-  background-color: black;
-  height: 3px;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 12%;
-  margin-bottom: 12%;
+
+#h4{
+  margin-left: 30vw; 
 }
 
-.text1maj{
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.text1{
-  text-align: center;
-  font-size: 25px;
-}
-
-
-.colonne2{
+.colonne8{
   width: 37%;
 }
 
@@ -92,15 +75,17 @@ export default {
   background-repeat: no-repeat;
 }
 
-.text5{
+#text5{
   text-align: center;
+  margin-top: 5vh; 
 }
 
-.colonne3{
+.colonne9{
   width: 37%;
+  margin-top: 13vh; 
 }
 
-.text5bis{
+#text5bis{
   text-align: center;
 }
 

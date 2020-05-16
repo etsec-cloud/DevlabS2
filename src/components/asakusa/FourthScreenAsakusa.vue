@@ -4,13 +4,13 @@
 
   <div class="colonne1"></div>
 
-  <div id="cs" class="colonne2">
-    <h1>Lieux incontournables</h1>
+  <div id="cs" class="colonne6">
+    <h1 id="h3"><FONT size="10pt"><U>Lieux incontournables</U></FONT></h1>
     <div class="image_left3"></div>
     <div id="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
-  <div class="colonne3">
+  <div class="colonne7">
     <div id="text4bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_right3"></div>
   </div>
@@ -58,29 +58,12 @@ export default {
   justify-content: center;
 }
 
-.trait{
-  background-color: black;
-  height: 3px;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 12%;
-  margin-bottom: 12%;
+#h3{
+  margin-left: 25vw;
+  position:absolute;
 }
 
-.text1maj{
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  }
-
-.text1{
-  text-align: center;
-  font-size: 20px;
-}
-
-
-
-.colonne2{
+.colonne6{
   width: 37%;
 }
 
@@ -91,17 +74,19 @@ export default {
   background-position: center center;
   background-size:contain;
   background-repeat: no-repeat;
+  margin-top: 5vh;
 }
 
-.text4{
+#text4{
   text-align: center;
 }
 
-.colonne3{
+.colonne7{
   width: 37%;
+  margin-top: 13vh;
 }
 
-.text4bis{
+#text4bis{
   text-align: center;
 }
 
