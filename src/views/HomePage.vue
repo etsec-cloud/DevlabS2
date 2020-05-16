@@ -116,12 +116,17 @@ export default {
       })
       
       map.on('click', 'maine', function(e) {
-          console.log("hasaku")
+        window.location.href = "http://localhost:8080/#/Asakusa";
+
         });
       map.on('click', 'lop', function(e) {
-        console.log("shinjju")
+        window.location.href = "http://localhost:8080/#/Shinjuku";
       });
     },
+
+    lol: function(){
+      console.log('oui')
+    }
   
   },
 }
