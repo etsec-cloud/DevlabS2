@@ -1,13 +1,11 @@
 <template>
     <nav>
-      
-          <router-link class="menu-item"
+        <router-link class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
             >{{ routes.text }}</router-link
           >
-        
     </nav>
 </template>
 
@@ -60,7 +58,9 @@ nav{
 }
 
 nav .menu-item.active,
-nav .menu-item:hover {}
+nav .menu-item:hover {
+    
+}
 nav .menu-item {
     color: #000;
     padding: 10px 20px;

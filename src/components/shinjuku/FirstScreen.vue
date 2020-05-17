@@ -1,13 +1,15 @@
 <template>
 
 <div class="wrapper">
-  <div class="flexContainer">
-    <h1>Shinjuku</h1>
-    <img class="kanji" src="./../assets/shinju.svg">
-  </div>
-    <span class="lol"></span>
+
+    <div class="flexContainer">
+      <h1>Shinjuku</h1>
+      <img class="kanji" src="./../../assets/shinju.svg">
+    </div>
+      <span v-on:click="scroll" class="icone"></span>
 
 </div>
+
 </template>
 
 
@@ -16,6 +18,17 @@
 <script>
 export default {
   name : 'FirstScreen',
+  methods: {
+    scroll: function() {
+
+      window.scrollTo({ 
+      top: window.innerHeight, // could be negative value
+      left: 0, 
+      behavior: 'smooth' 
+      });
+
+    }
+  }
 };
 </script>
 
@@ -26,21 +39,25 @@ export default {
 <style scoped>
  
 .wrapper {
-  height:100vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../assets/bg.jpg" ) ;
+
+  height:95vh;
+
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 
-  background-size: cover;}
+  background-size: cover;
+  transition-duration: 1s;
+
+  }
+
 
 .flexContainer{
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
   align-items: center;
-
   color:white;
   font-size: 8em;
   line-height: 100px;
@@ -49,7 +66,7 @@ export default {
   width: 50vw;
 }
 
-.lol {
+.icone {
 width: 0;
 height: 0;
 border-style: solid;
@@ -59,6 +76,8 @@ position :absolute;
 left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
+cursor: pointer ;
+
 }
 
 </style>
