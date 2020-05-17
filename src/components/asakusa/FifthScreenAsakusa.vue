@@ -1,10 +1,10 @@
 <template>
 
+<div id="vcs"><h1  id="h4"><FONT size="10pt"><U>Spécialités</U></FONT></h1>
 <div class="container">
   <div class="colonne1"></div>
 
-  <div id="vcs" class="colonne8">
-    <h1 id="h4"><FONT size="10pt"><U>Spécialités</U></FONT></h1>
+  <div class="colonne8">
     <div id="text5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="image_left4"></div>
   </div>
@@ -17,7 +17,7 @@
 <span v-on:mouseover="mouseOver" class="text1"></span>
 
 </div>
-
+</div>
 </template>
 
 
