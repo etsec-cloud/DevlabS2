@@ -133,6 +133,7 @@ ul{
   width: 90vw;
   margin-left: 52vw;
   margin-top: 45vh;
+  z-index: 1;
 }
 .container{
   height:100px;

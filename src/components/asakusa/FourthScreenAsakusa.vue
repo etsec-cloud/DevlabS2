@@ -1,11 +1,12 @@
 <template>
-
+<div>
+    <h1 id="h3"><FONT size="10pt"><U>Lieux incontournables</U></FONT></h1>
 <div class="container">
 
   <div class="colonne1"></div>
+  
 
   <div id="cs" class="colonne6">
-    <h1 id="h3"><FONT size="10pt"><U>Lieux incontournables</U></FONT></h1>
     <div class="image_left3"></div>
     <div id="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
@@ -18,7 +19,7 @@
 <span v-on:mouseover="mouseOver" class="text1"></span>
 
 </div>
-
+</div>
 </template>
 
 
@@ -60,11 +61,11 @@ export default {
 
 #h3{
   margin-left: 25vw;
-  position:absolute;
 }
 
 .colonne6{
   width: 37%;
+  margin-top: -10vh;
 }
 
 .image_left3{
@@ -83,7 +84,7 @@ export default {
 
 .colonne7{
   width: 37%;
-  margin-top: 13vh;
+  margin-top: 6vh;
 }
 
 #text4bis{
