@@ -9,8 +9,7 @@ import APropos from './../views/APropos.vue'
 
 import Shinjuku from './../views/Shinjuku.vue'
 import Asakusa from './../views/Asakusa.vue'
-
-
+import Harajuku from './../views/Harajuku.vue'
 
 
 
@@ -24,6 +23,7 @@ export default new Router({
       { path: '/APropos', component: APropos },
       { path: '/Shinjuku', component: Shinjuku },
       { path: '/Asakusa', component: Asakusa },
+      { path: '/Harajuku', component: Harajuku },
     
     ]
 })  
