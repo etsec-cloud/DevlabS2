@@ -1,7 +1,10 @@
 <template>
 <div>
     <FirstScreenAsakusa/>
-    <ThridScreenAsakusa/>
+    <SecondScreenAsakusa/>
+    <ThirdScreenAsakusa/>
+    <FourthScreenAsakusa/>
+    <FifthScreenAsakusa/>
 </div>
 </template>
 
@@ -10,7 +13,10 @@
 
 
 import FirstScreenAsakusa from './../components/asakusa/FirstScreenAsakusa'
-import ThridScreenAsakusa from './../components/asakusa/ThirdScreenAsakusa.vue'
+import SecondScreenAsakusa from './../components/asakusa/SecondScreenAsakusa.vue'
+import ThirdScreenAsakusa from './../components/asakusa/ThirdScreenAsakusa.vue'
+import FourthScreenAsakusa from './../components/asakusa/FourthScreenAsakusa.vue'
+import FifthScreenAsakusa from './../components/asakusa/FifthScreenAsakusa.vue'
 
 
 
@@ -18,7 +24,10 @@ export default {
   name : 'Asakusa',
   components:{
     FirstScreenAsakusa,
-    ThridScreenAsakusa
+    SecondScreenAsakusa,
+    ThirdScreenAsakusa,
+    FourthScreenAsakusa,
+    FifthScreenAsakusa
     },
   
 };

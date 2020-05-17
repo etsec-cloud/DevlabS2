@@ -3,6 +3,7 @@
 <div class="wrapper">
   <div class="flexContainer">
     <h1>Asakusa</h1>
+    <img class="kanji" src="./../../assets/asakusa.svg">
   </div>
     <span v-on:click="scroll" class="icone"></span>
 
@@ -41,7 +42,7 @@ export default {
   background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  position:relative;
   background-size: cover;}
 
 .flexContainer{
@@ -53,6 +54,7 @@ export default {
   font-size: 8em;
   line-height: 100px;
 }
+
 .kanji{
   width: 50vw;
 }
@@ -68,7 +70,6 @@ left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
 cursor: pointer ;
-
 }
 
 </style>

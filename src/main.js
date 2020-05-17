@@ -14,5 +14,8 @@ new Vue({
 
 import VueMapbox from "vue-mapbox";
 import Mapbox from "mapbox-gl";
+import vueScrollto from 'vue-scrollto'
+
+Vue.use(vueScrollto)
 
 Vue.use(VueMapbox, { mapboxgl: Mapbox });

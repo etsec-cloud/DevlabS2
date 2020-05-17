@@ -2,27 +2,18 @@
 
 <div class="container">
 
-  <div class="colonne1">
-    <div class="imageMap"></div>
-    <div class="trait"></div>
-    <div class="text1">Culture/Evènement</div> 
-    <div class="trait"></div>
-    <div class="text1">Nourriture</div>
-    <div class="trait"></div>
-    <div class="text1">Lieux incontournables</div>
-    <div class="trait"></div>
-    <div class="text1">Spécialité</div>
-    <div class="trait"></div>
+  <div class="colonne1"></div>
+
+  <div id="dota" class="colonne4">
+    <h1 id="h2"><FONT size="10pt"><U>Nourriture</U></FONT></h1>
+    <div id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="image_left2"></div>
   </div>
 
-  <div class="colonne2">
-    <div class="image_left"></div>
-    <div class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  </div>
-
-  <div class="colonne3">
-    <div class="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <div class="image_right"></div>
+  <div class="colonne5">
+   
+    <div class="image_right2"></div>
+    <div id="text3bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
 <span v-on:mouseover="mouseOver" class="text1"></span>
@@ -41,10 +32,6 @@ export default {
     scroll: function() {
       var scrollIci = document.querySelector(".scrollIci");
       scrollIci.scrollTop= scrollIci.scrollHeight; 
-    },
-
-    mouseOver: function() {
-      document.getElementById("text1").style.color = "red";
     },
   }
 };
@@ -65,67 +52,47 @@ export default {
 
 .colonne1{
   width: 20%;
-  margin-top: 50px;
   justify-content: center;
 }
 
-.trait{
-  background-color: black;
-  height: 3px;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 15%;
-  margin-bottom: 15%;
+#h2{
+  margin-left: 31vw;
+  padding-bottom: 3vh;
 }
 
-.text1{
-  text-align: center;
-  font-size: 25px;
-}
-
-.imageMap{
-  height: 20%;
-  width: 50%;
-  background:url("./../../assets/asakusaMap.jpg");
-  background-position: center center;
-  background-size: cover;
-  margin-left: 25%;
-}
-
-.colonne2{
+.colonne4{
   width: 37%;
-  margin-top: 50px;
 }
 
-.image_left{
-  height: 80%;
+.image_left2{
+  height: 70%;
   width: 100%;
-  background:url("./../../assets/asakusa2.jpg");
+  background:url("./../../assets/nourriture_asakusa1.jpg");
   background-position: center center;
-  background-size: cover;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
-.text2{
+#text3{
   text-align: center;
-  margin-top: 50px;
 }
 
-.colonne3{
+.colonne5{
   width: 37%;
-  margin-top: 50px;
+  margin-top: 14vh;
 }
 
-.text3{
+#text3bis{
   text-align: center;
 }
 
-.image_right{
-  height: 80%;
+.image_right2{
+  height: 70%;
   width: 100%;
-  background:url("./../../assets/asakusa3.jpg");
+  background:url("./../../assets/nourriture_asakusa2.jpg");
   background-position: center center;
   background-size:cover;
-  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 </style>
