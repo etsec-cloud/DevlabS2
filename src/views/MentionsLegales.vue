@@ -17,7 +17,7 @@ Mauris pulvinar et felis in sollicitudin. Mauris ultricies orci et ante dictum h
   </div>
 </template>
 
-<style>
+<style scoped>
 body{
   background-color: #191414;
 }

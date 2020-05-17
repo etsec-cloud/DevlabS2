@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name : 'ThirdScreenAsakusa',
+  name : 'ThirdScreenShibuya',
   methods: {
     scroll: function() {
       var scrollIci = document.querySelector(".scrollIci");

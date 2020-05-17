@@ -20,12 +20,7 @@ export default {
                         id: 0,
                         text: 'Accueil',
                         page:'/'
-                    },
-                    {
-                        id: 1,
-                        text: 'Harajuku',
-                        page:'/Harajuku'
-                    },
+                    },  
                     {
                         id: 2,
                         text: 'Shinjuku',

@@ -2,7 +2,7 @@
 
 <div class="wrapper">
   <div class="flexContainer">
-    <h1>Harajuku</h1>
+    <h1>Shibuya</h1>
   </div>
     <span v-on:click="scroll" class="icone"></span>
 
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name : 'FirstScreenHarajuku',
+  name : 'FirstScreenShibuya',
   methods: {
     scroll: function() {
 
@@ -36,7 +36,7 @@ export default {
  
 .wrapper {
   height:95vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/harajuku.first.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/shibuya.first.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
