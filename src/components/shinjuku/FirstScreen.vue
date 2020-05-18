@@ -40,7 +40,7 @@ export default {
  
 .wrapper {
 
-  height:95vh;
+  height:92vh;
 
   background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
   background-repeat: no-repeat;

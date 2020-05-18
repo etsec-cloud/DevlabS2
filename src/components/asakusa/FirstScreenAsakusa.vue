@@ -38,7 +38,7 @@ export default {
 <style scoped>
  
 .wrapper {
-  height:95vh;
+  height:92vh;
   background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;

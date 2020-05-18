@@ -84,12 +84,7 @@ export default {
 }
 
 .imageMap{
-  height: 20%;
-  width: 50%;
-  background:url("./../../assets/asakusaMap.jpg");
-  background-position: center center;
-  background-size: cover;
-  margin-left: 25%;
+  width: 50%; 
 }
 
 .colonne2{
