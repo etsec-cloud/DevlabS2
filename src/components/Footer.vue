@@ -42,9 +42,9 @@ export default {
 </script>
 <style>
 footer{
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(31, 31, 31);
     margin: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     position: absolute;
     bottom:auto;
     width:100%;
