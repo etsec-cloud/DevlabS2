@@ -32,7 +32,7 @@ export default {
         id: 'maine',
         type: 'fill',
         paint: {
-          'fill-color': '#46637B',
+          'fill-color': '#ffffff',
           'fill-opacity': 0.7,
         },
         source: {
@@ -64,7 +64,7 @@ export default {
         id: 'shibuya',
         type: 'fill',
         paint: {
-          'fill-color': '#46637B',
+          'fill-color': '#ffffff',
           'fill-opacity': 0.7,
         },
         source: {
@@ -4326,17 +4326,13 @@ export default {
           },
         },
       })
+      
        map.addLayer({
         id: 'shinjuku',
         type: 'fill',
         paint: {
-          'fill-color': '#000000',
-          'fill-opacity': [
-            'case',
-            ['boolean', ['feature-state', 'hover'], false],
-            1,
-            0.5
-          ]
+          'fill-color': '#ffffff',
+          'fill-opacity':0.5,
         },
         source: {
         type: 'geojson',
@@ -9668,14 +9664,19 @@ export default {
             },
           },
          })
-    
+
       
       map.on('click', 'maine', function(e) {
         window.location.href = "http://localhost:8080/#/Asakusa";
 
         });
-      map.on('click', 'shibuya', function(e) {
+
+       map.on('click', 'shinjuku', function(e) {
         window.location.href = "http://localhost:8080/#/Shinjuku";
+
+        });
+      map.on('click', 'shibuya', function(e) {
+        window.location.href = "http://localhost:8080/#/Shibuya";
       });
     },
   },

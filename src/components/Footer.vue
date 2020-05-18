@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="cl-effect-21">
       
           <router-link class="menu-item"
             v-for="routes in links"

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1  id="lol" class="titreSec">Culture/Evènement</h1>
+  <h1 id="h1" class="titreSec">Culture/Evènement</h1>
   <div class="container">
     <ul id="list" class="colonne1">
       <div id="menu">
@@ -18,7 +18,7 @@
         </li>
 
         <li        class="trait"></li>
-        <li id="1" class="text1" v-scroll-to="'#h1'">Culture/Evènement </li> 
+        <li id="1" class="text1" v-scroll-to="'#h1'" >Culture/Evènement </li> 
         <li        class="trait"></li>
         <li id="2" class="text1" v-scroll-to="'#h2'">Nourriture</li>
         <li        class="trait"></li>
