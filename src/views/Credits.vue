@@ -30,6 +30,8 @@ Vidéos</p>
 
 <style scoped>
 
+@media screen and (min-width: 981px){
+
 .black-body{
   background-color: black;
   padding: 10%;
@@ -54,6 +56,32 @@ Vidéos</p>
   -moz-osx-font-smoothing: grayscale;
   text-align:justify;
   color: #ffffff;
+}
+}
+
+@media screen and (max-width: 981px){
+
+.black-body{
+  background-color: black;
+  padding: 10%;
+}
+
+.central-box{
+    color: rgb(255, 255, 255);
+}
+
+.text{
+  margin: 5%;
+  text-align: justify;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align:justify;
+  color: #ffffff;
+}
 }
 
 </style>
