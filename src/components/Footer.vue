@@ -20,7 +20,7 @@ export default {
                 links: [
                     {
                         id: 0,
-                        text: 'A propos',
+                        text: 'À propos',
                         page:'/APropos'
                     },
                     {
@@ -44,12 +44,11 @@ export default {
 footer{
     background-color: rgb(119, 119, 119);
     margin: auto;
-    border-radius: 20px 20px 0 0;
     color: rgb(0, 0, 0);
     position: absolute;
     bottom:auto;
     width:100%;
-    padding-top:20px;
+    padding:2% 0 1% 0;
     height:30px;
 }
 

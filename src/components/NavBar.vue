@@ -48,13 +48,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 5vh;
+    height: 8vh;
     background-color: white;
 }
 
 nav .menu-item.active,
 nav .menu-item:hover {
-    
 }
 nav .menu-item {
     color: #000;
