@@ -45,16 +45,14 @@ footer{
     background-color: rgb(31, 31, 31);
     margin: auto;
     color: rgb(255, 255, 255);
-    position: absolute;
-    bottom:auto;
-    width:100%;
-    padding:2% 0 1% 0;
-    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
 }
 
 footer .menu-item  {
     color: inherit;
-    padding: 20px 30px;
     text-decoration: none;
 }
 
