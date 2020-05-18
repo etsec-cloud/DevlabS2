@@ -41,24 +41,15 @@ export default {
             }
         }
 }
-
+     
 </script>
-
-
 <style>
-
 nav{
-  position:fixed;
-  left:0;
-  top:0;
-  width:100vw;
-  z-index:200; 
-  height:100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 8vh;
-  background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: white;
 }
 
 .cl-effect-21 a {
@@ -131,11 +122,5 @@ nav .menu-item {
 nav .menu-item  {
     color: inherit;
     text-decoration: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 </style>
