@@ -5,12 +5,15 @@
     <div id="menu">
     
       <li
+        v-on:mouseover="yo"
+        v-on:mouseleave="ya"
+
         @mouseover="hover = true"
         @mouseleave="hover = false"
-        :class="{ active: hover }"
+        :class="{ active: hover}"
        >   
        
-        <img class="imageMap" src="./../../assets/asakusaMap.jpg"/> 
+        <img  class="imageMap" src="./../../assets/asakusaMap.jpg"/> 
       </li>
 
       <li        class="trait"></li>
@@ -60,6 +63,15 @@ export default {
     window.removeEventListener('scroll', this.bold);
   },
   methods: {
+    yo:function(){
+      var body = document.querySelector('#app');
+        body.classList.add("bgcol");
+    },
+    ya:function(){
+      var body = document.querySelector('#app');
+        body.classList.remove("bgcol");
+    },
+
    bold: function(){
      //element dans le container
       var colonne1 = document.getElementById("lol");
@@ -118,6 +130,10 @@ export default {
 
 
 <style>
+.bgcol{
+  background-color: rgb(4, 4, 56);
+
+}
 li{
   list-style: none;
 }
@@ -133,7 +149,6 @@ ul{
   width: 90vw;
   margin-left: 52vw;
   margin-top: 45vh;
-  z-index: 1;
 }
 .container{
   height:100px;
