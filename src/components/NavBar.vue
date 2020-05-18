@@ -15,6 +15,8 @@ export default {
     name:'NavBar',
         data(){
             return{
+                showNavbar: true,
+                lastScrollPosition: 0,
                 links: [
                     {
                         id: 0,
@@ -39,7 +41,17 @@ export default {
                 ]
 
             }
-        }
+        },
+  };
+  methods: {
+  onScroll ();{
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+    if (currentScrollPosition < 0) {
+      return
+    }
+    this.showNavbar = currentScrollPosition < this.lastScrollPosition
+    this.lastScrollPosition = currentScrollPosition
+  }
 }
      
 </script>
