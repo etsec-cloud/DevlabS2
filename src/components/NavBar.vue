@@ -45,11 +45,22 @@ export default {
 </script>
 <style>
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 8vh;
-    background-color: white;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100vw;
+  z-index:200; 
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .cl-effect-21 a {
