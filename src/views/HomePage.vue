@@ -3,7 +3,7 @@
     <mapbox
       access-token= "pk.eyJ1IjoiZXQtc2VjIiwiYSI6ImNrOG9nZjJ0dDA0aXgzbXBzcjlzdnh2MDQifQ.VApXtOITuEEVc3pcjaUYxw"
       :map-options="{
-        style: 'mapbox://styles/et-sec/ckacb5cgt3fhu1io5o883rd5w',
+        style: 'mapbox://styles/et-sec/ckacggxpx3ezw1inmnx4notc0',
         center: [139.777155, 35.640153],
         zoom: 11.16,
         pitch: 60.00,

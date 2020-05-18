@@ -57,7 +57,6 @@ nav .menu-item:hover {
 }
 nav .menu-item {
     color: #000;
-    padding: 10px 20px;
     position: relative;
     text-align: center;
     border-bottom: 3px solid transparent;   
