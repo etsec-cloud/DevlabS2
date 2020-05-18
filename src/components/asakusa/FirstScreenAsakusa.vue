@@ -51,12 +51,12 @@ export default {
   justify-content: space-around;
   align-items: center;
   color:white;
-  font-size: 8em;
+  font-size: 6em;
   line-height: 100px;
 }
 
 .kanji{
-  width: 50vw;
+  width: 30vw;
 }
 
 .titre {
