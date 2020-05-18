@@ -4,14 +4,16 @@
   <div class="text">
       <h1>A Propos ||
 について</h1><br>
+  </div>
       <div class="dev">
-          <ul><img src="../assets/apropos/etienne.png" width="100px" height="100px">
-          Etienne Secondini</ul>
-          <ul><img src="../assets/apropos/alexandre.png" width="100px" height="100px">
-          Alexandre Duval</ul>
-          <ul><img src="../assets/apropos/noa.png" width="100px" height="100px">
+          <ul><img src="../assets/apropos/etienne.png" width="100px" height="100px"><br>
+          Etienne <br> Secondini</ul>
+          <ul><img src="../assets/apropos/alexandre.png" width="100px" height="100px"><br>
+          Alexandre <br> Duval</ul>
+          <ul><img src="../assets/apropos/noa.png" width="100px" height="100px"><br>
           Noa <br> Devillers</ul>
-      </div>    
+      </div> 
+    <div class="text">   
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat dictum vulputate. Mauris vitae dolor id sem lacinia scelerisque. Mauris quis dui id mi euismod posuere. Praesent eu magna mauris. Vivamus sed tristique risus, in maximus dui. Maecenas non ligula maximus, luctus ex sit amet, porta enim. Nam vitae rutrum sapien, sit amet consequat justo. Nunc molestie est id neque vulputate feugiat. Vestibulum tristique efficitur quam, a facilisis lacus pellentesque a. Pellentesque et ligula sed augue tempus viverra in nec lectus. Donec nec scelerisque augue. Maecenas a consectetur dui. Vestibulum leo orci, dictum vel nibh blandit, pretium malesuada ipsum. Mauris id fermentum urna, congue tempus elit. Ut quis eros eu tellus suscipit blandit quis id leo.
 
 Fusce posuere tortor eu odio ornare, a elementum felis vulputate. Nulla facilisi. Sed vel molestie nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce venenatis vitae metus eu pharetra. Pellentesque non tortor mauris. Praesent varius nisl vel est fringilla fermentum nec eu tellus. Morbi vel dolor venenatis, sollicitudin lectus id, blandit metus. Curabitur lacus magna, maximus non tincidunt vel, ultrices ac risus. Duis volutpat mattis porta. Sed sed neque eget elit malesuada molestie lobortis sit amet urna. Suspendisse rhoncus euismod nunc.
@@ -29,9 +31,12 @@ Mauris pulvinar et felis in sollicitudin. Mauris ultricies orci et ante dictum h
 
 
 <style scoped>
+
+@media screen and (min-width: 981px){
+
 .black-body{
   background-color: black;
-  padding: 8%;
+  padding: 10%;
 }
 
 .dev{
@@ -64,5 +69,42 @@ ul{
   text-align:justify;
   color: #ffffff;
 }
+}
+
+
+
+@media screen and (max-width: 981px){
+
+.black-body{
+  background-color: black;
+  padding: 10% 0;
+}
+
+.dev{
+  display: inline-flex;
+}
+
+ul{
+  text-align: center;
+}
+
+.central-box{
+    color: rgb(255, 255, 255);
+}
+
+.text{
+  margin: 5%;
+  text-align: justify;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align:justify;
+  color: #ffffff;
+}
+}
+
 
 </style>

@@ -174,17 +174,14 @@ ul{
 .imageMap{
   width: 50%; 
 }
-
 #h1{
   margin-left: 25vw;
   margin-top: 5vh;
 } 
-
 .colonne2{
   width: 37%;
   margin-bottom: 20vh;
 }
-
 .image_left{
   height: 70%;
   width: 100%;
@@ -197,7 +194,6 @@ ul{
   text-align: center;
   margin-top: 40px;
   }
-
 .colonne3{
   width: 37%;
   margin-top: 15vh;
@@ -214,14 +210,24 @@ ul{
   margin-top: 50px;
 }
 @media screen and (max-width: 900px) {
-  .container{
-  flex-direction: column ;
-  justify-content: center;
-  align-items: center;
-  }
-  #menu{
-  display: flex;
-  flex-direction: row;
-  }
+.container{
+    width: 100%;
+    flex-direction: column;
+    display: block;
+}
+.colonne1{
+  display: none;
+}
+
+.colonne2{
+    width: 90%;
+    flex-direction: column;
+}
+
+.colonne3{
+    width: 90%;
+    flex-direction: column;
+}
+
 }
 </style>

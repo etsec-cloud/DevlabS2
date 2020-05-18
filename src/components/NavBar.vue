@@ -57,6 +57,10 @@ nav .menu-item:hover {
 }
 nav .menu-item {
     color: #000;
+<<<<<<< HEAD
+=======
+    padding: 10px 0;
+>>>>>>> bbb8392cb696b16851ee97dc4630e171c026b52c
     position: relative;
     text-align: center;
     border-bottom: 3px solid transparent;   

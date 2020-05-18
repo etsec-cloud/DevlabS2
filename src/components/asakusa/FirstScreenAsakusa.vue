@@ -2,7 +2,7 @@
 
 <div class="wrapper">
   <div class="flexContainer">
-    <h1>Asakusa</h1>
+    <h1 class="titre">Asakusa</h1>
     <img class="kanji" src="./../../assets/asakusa.svg">
   </div>
     <span v-on:click="scroll" class="icone"></span>
@@ -70,6 +70,18 @@ left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
 cursor: pointer ;
+}
+
+
+@media screen and (max-width: 900px){
+.wrapper {
+  width: 100%; 
+  background-size:cover;
+}
+
+.titre {
+  font-size: 1em;
+  margin-top: 200px;}
 }
 
 </style>
