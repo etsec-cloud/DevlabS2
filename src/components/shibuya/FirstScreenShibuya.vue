@@ -1,12 +1,10 @@
 <template>
 
 <div class="wrapper">
-
-    <div class="flexContainer">
-      <h1>Shinjuku</h1>
-      <img class="kanji" src="./../../assets/shinju.svg">
-    </div>
-      <span v-on:click="scroll" class="icone"></span>
+  <div class="flexContainer">
+    <h1>Shibuya</h1>
+  </div>
+    <span v-on:click="scroll" class="icone"></span>
 
 </div>
 
@@ -17,7 +15,7 @@
 
 <script>
 export default {
-  name : 'FirstScreen',
+  name : 'FirstScreenShibuya',
   methods: {
     scroll: function() {
 
@@ -34,24 +32,15 @@ export default {
 
 
 
-
-
 <style scoped>
  
 .wrapper {
-
   height:92vh;
-
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/shibuya.first.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-
-  background-size: cover;
-  transition-duration: 1s;
-
-  }
-
+  background-size: cover;}
 
 .flexContainer{
   display: flex;

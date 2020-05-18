@@ -3,10 +3,12 @@
     <mapbox
       access-token= "pk.eyJ1IjoiZXQtc2VjIiwiYSI6ImNrOG9nZjJ0dDA0aXgzbXBzcjlzdnh2MDQifQ.VApXtOITuEEVc3pcjaUYxw"
       :map-options="{
-        style: 'mapbox://styles/mapbox/light-v10',
-        center: [139.7594549, 35.6828387],
-        zoom: 11,
-        pitch: 45,
+        style: 'mapbox://styles/et-sec/ckacb5cgt3fhu1io5o883rd5w',
+        center: [139.777155, 35.640153],
+        zoom: 11.16,
+        pitch: 60.00,
+        bearing: -32.00
+
       }"
       @map-load="loaded"
       
