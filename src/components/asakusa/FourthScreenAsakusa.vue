@@ -1,19 +1,19 @@
 <template>
 <div>
-    <h1 id="h3"><FONT size="10pt"><U>Lieux incontournables</U></FONT></h1>
+    <h1 class="titreSec">Lieux incontournables</h1>
 <div class="container">
 
   <div class="colonne1"></div>
   
 
   <div id="cs" class="colonne6">
-    <div class="image_left3"></div>
+    <img src="./../../assets/asakusaMagasin.jpg" class="image_left"/>
     <div id="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
   </div>
 
   <div class="colonne7">
     <div id="text4bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <div class="image_right3"></div>
+    <img class="image_right" src="./../../assets/asakusaPorte.jpg"/>
   </div>
 
 <span v-on:mouseover="mouseOver" class="text1"></span>
@@ -45,29 +45,9 @@ export default {
 
 
 <style>
-
-.container{
-  height:100vh;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
-
-.colonne1{
-  width: 20%;
-  justify-content: center;
-}
-
-#h3{
-  margin-left: 25vw;
-}
-
 .colonne6{
   width: 37%;
-  margin-top: -10vh;
 }
-
 .image_left3{
   height: 70%;
   width: 100%;
@@ -91,13 +71,14 @@ export default {
   text-align: center;
 }
 
-.image_right3{
-  height: 70%;
-  width: 100%;
-  background:url("./../../assets/asakusaPorte.jpg");
-  background-position: center center;
-  background-size:cover;
-  margin-top: 30px;
+@media screen and (max-width: 900px) {
+  .colonne6,
+  .colonne7{
+    width: 90%;
+  }
+ 
+ 
 }
+
 
 </style>

@@ -59,6 +59,11 @@ export default {
   width: 50vw;
 }
 
+.titre {
+  font-size: 10vw;
+  margin-top: 200px;
+}
+
 .icone {
 width: 0;
 height: 0;
@@ -77,11 +82,6 @@ cursor: pointer ;
 .wrapper {
   width: 100%; 
   background-size:cover;
+  }
 }
-
-.titre {
-  font-size: 1em;
-  margin-top: 200px;}
-}
-
 </style>

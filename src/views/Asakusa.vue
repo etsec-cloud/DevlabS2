@@ -1,11 +1,11 @@
 <template>
-<div>
+  <div>
     <FirstScreenAsakusa/>
     <SecondScreenAsakusa/>
     <ThirdScreenAsakusa/>
     <FourthScreenAsakusa/>
     <FifthScreenAsakusa/>
-</div>
+  </div>
 </template>
 
 
