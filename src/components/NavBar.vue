@@ -43,7 +43,7 @@ export default {
             }
         },
   };
-  /* methods: {
+  methods: {
   onScroll ();{
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
     if (currentScrollPosition < 0) {
@@ -52,7 +52,7 @@ export default {
     this.showNavbar = currentScrollPosition < this.lastScrollPosition
     this.lastScrollPosition = currentScrollPosition
   } 
-}*/
+}
      
 </script>
 <style>
