@@ -1,6 +1,8 @@
 <template>
+
     <nav id="navbar" class="cl-effect-21">
-        <router-link class="menu-item"
+        <span v-on:click="burgerAnime" id="toggler"> clique burger</span>
+        <router-link id="bigmenu" class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
@@ -40,7 +42,24 @@ export default {
 
             }
         },
+    methods:{
+        burgerAnime: function(){
+            let pusher = document.querySelector('.site-pusher');
+            let image = document.querySelectorAll('.image_left');
+            pusher.classList.toggle('activate');
 
+            let overlay = document.querySelector('.site-cache');
+            overlay.classList.add('overlay');
+
+
+            image.classList.add('overlay');
+
+            if(overlay.classList.contains('true')){
+                console.log('treu')
+
+            }
+        }
+    }
    
     
 };
@@ -49,9 +68,108 @@ export default {
      
 </script>
 <style>
+
+
+#nav-icon1 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+
+
+
+.site-pusher{
+    height: 100%;
+    transition-duration: 0.3s;
+    transform: translateX(0px); 
+    overflow: hidden;
+}
+
+#toggler{
+    display: none;
+}
+.activate{
+    transform: translateX(50vw); 
+}
+
+.overlay{
+    z-index: 300;
+    height: 100%;
+    opacity: 1;
+    z-index: 10000;
+    background-color:black !important;
+    background-repeat: repeat;
+}
+
+
 .hide{
     top: -80px;
 }
+
 .cl-effect-21 a {
 	padding: 10px;
 	color: #000000;
@@ -129,5 +247,17 @@ nav .menu-item {
 nav .menu-item  {
     color: inherit;
     text-decoration: none;
+}
+@media only screen and (max-width: 750px) {
+    #toggler{
+        display:block;
+        margin-left: 2vw;
+    }
+    nav{
+        justify-content: flex-start !important;
+    }
+    #bigmenu{
+        display: none;
+    }
 }
 </style>

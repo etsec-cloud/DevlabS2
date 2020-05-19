@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <NavBar/>
-     <router-view />
+    <div v-on:click="overlayOut" class="site-pusher">
+      <div class="site-cache">
+        <NavBar/>
+        <router-view />
 
-    <Footer/>
-
+        <Footer/>
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -20,6 +24,37 @@ export default {
     NavBar,
     Footer
   },
+  created () {
+    window.addEventListener('scroll', this.oui);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.oui);
+  },
+
+  methods: {
+    oui : function(){
+       var prevScrollpos = window.pageYOffset;
+        
+        window.onscroll = function() {
+
+        var currentScrollpos = window.pageYOffset;
+          if(prevScrollpos > currentScrollpos) {
+            console.log('top')
+                document.getElementById("navbar").style.top = "0";
+          } 
+
+          else {
+            console.log('bot')
+
+                document.getElementById("navbar").style.top = "-100px";
+          }
+
+        prevScrollpos = currentScrollpos;
+
+      }
+      }
+      }
+
 }
 </script>
 

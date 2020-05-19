@@ -118,18 +118,7 @@ export default {
       }
     
     },
-    stickymenu: function(){
-      var colonne1 = document.getElementById("menu");
-      var sticky = colonne1.offsetHeight;
-      var lo = 250;
-      
-      if (window.pageYOffset - lo > sticky) {
-        colonne1.classList.add("sticky");
-      }
-      else{
-        colonne1.classList.remove("sticky");
-      }
-    },
+   
   }
 };
 </script>
