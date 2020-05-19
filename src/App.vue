@@ -1,11 +1,14 @@
 <template>
-  <div id="app">
+<div class="site-pusher">
+  <div class="site-cache">
+    <div id="app">
     <NavBar/>
-     <router-view />
+    <router-view />
 
     <Footer/>
-
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -20,6 +23,7 @@ export default {
     NavBar,
     Footer
   },
+ 
 }
 </script>
 

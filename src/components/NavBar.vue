@@ -1,6 +1,9 @@
 <template>
+
     <nav id="navbar" class="cl-effect-21">
-        <router-link class="menu-item"
+        <span >
+            <img v-on:click="burgerAnime" id="toggler" height="30vh" src="./../assets/burger.svg"></span>
+        <router-link id="bigmenu" class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
             :to="`${routes.page}`"
@@ -40,7 +43,22 @@ export default {
 
             }
         },
+    methods:{
+        burgerAnime: function(){
 
+            let pusher = document.querySelector('.site-pusher');
+            pusher.classList.toggle('activate');
+            document.body.classList.toggle('position')
+            // let overlay = document.querySelector('.site-cache');
+            // overlay.classList.add('overlay');
+
+        },
+
+       
+
+
+           
+    }
    
     
 };
@@ -49,9 +67,37 @@ export default {
      
 </script>
 <style>
+.position{
+  position:fixed;
+
+}
+.site-pusher{
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+
+#toggler{
+    display: none;
+}
+.activate{
+    transform: translateX(50vw); 
+}
+
+.overlay{
+    z-index: 300;
+    height: 100%;
+    opacity: 1;
+    z-index: 10000;
+    background-color:black !important;
+    background-repeat: repeat;
+}
+
+
 .hide{
     top: -80px;
 }
+
 .cl-effect-21 a {
 	padding: 10px;
 	color: #000000;
@@ -129,5 +175,24 @@ nav .menu-item {
 nav .menu-item  {
     color: inherit;
     text-decoration: none;
+}
+@media only screen and (max-width: 750px) {
+    #toggler{
+        position: absolute;
+        display:block;
+        top:20%;
+        left: 2%;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .menu-item{
+    top: 20vh;
+    left: 25vw;
+    transform: translateX(-100vw); 
+
+    }
+    
 }
 </style>
