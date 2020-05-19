@@ -42,6 +42,8 @@ export default {
 
             }
         },
+
+   
     
 };
   
@@ -115,6 +117,7 @@ nav{
   justify-content: space-around;
   height: 8vh;
   background-color: white;
+  transition: top 0.5s;
 }
 
 nav .menu-item {
