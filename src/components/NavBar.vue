@@ -48,6 +48,7 @@ export default {
 
             let pusher = document.querySelector('.site-pusher');
             pusher.classList.toggle('activate');
+            document.body.classList.toggle('position')
             // let overlay = document.querySelector('.site-cache');
             // overlay.classList.add('overlay');
 
@@ -66,10 +67,13 @@ export default {
      
 </script>
 <style>
+.position{
+  position:fixed;
+
+}
 .site-pusher{
     height: 100%;
     transition-duration: 0.3s;
-    transform: translateX(0px); 
 }
 
 
