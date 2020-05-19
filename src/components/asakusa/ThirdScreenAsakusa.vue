@@ -48,7 +48,7 @@ created () {
 
         var currentScrollpos = window.pageYOffset;
 
-        if(prevScrollpos > currentScrollpos) {
+        if(prevScrollpos < currentScrollpos) {
 
               document.getElementById("navbar").classList.add('hide');
         } else {
