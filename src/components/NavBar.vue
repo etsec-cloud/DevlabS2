@@ -42,10 +42,17 @@ export default {
 
             }
         },
-    
-};
-  
-
+  };
+  /* methods: {
+  onScroll ();{
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+    if (currentScrollPosition < 0) {
+      return
+    }
+    this.showNavbar = currentScrollPosition < this.lastScrollPosition
+    this.lastScrollPosition = currentScrollPosition
+  } 
+}*/
      
 </script>
 <style>
@@ -116,7 +123,6 @@ nav{
   height: 8vh;
   background-color: white;
 }
-
 nav .menu-item {
     color: #000;
     padding: 10px 0;
