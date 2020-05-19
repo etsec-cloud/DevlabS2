@@ -31,7 +31,6 @@ export default {
 
    
     loaded(map) {
-      loadingSpinner(false);
        map.addLayer({
         id: 'maine',
         type: 'fill',
