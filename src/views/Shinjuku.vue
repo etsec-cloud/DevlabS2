@@ -1,10 +1,10 @@
 <template>
 <div>
-    <FirstScreen/>
-    <SecondScreen/>
-    <ThirdScreen/>
-    <FourthScreen/>
-    <FifthScreen/>
+    <FirstScreenShinjuku/>
+    <SecondScreenShinjuku/>
+    <ThirdScreenShinjuku/>
+    <FourthScreenShinjuku/>
+    <FifthScreenShinjuku/>
 
 
 
@@ -14,21 +14,21 @@
 
 <script>
 
-import FirstScreen from './../components/shinjuku/FirstScreen.vue'
-import SecondScreen from './../components/shinjuku/SecondScreen.vue'
-import ThirdScreen from './../components/shinjuku/ThirdScreen.vue'
-import FourthScreen from './../components/shinjuku/FourthScreen.vue'
-import FifthScreen from './../components/shinjuku/FifthScreen.vue'
+import FirstScreenShinjuku from './../components/shinjuku/FirstScreenShinjuku.vue'
+import SecondScreenShinjuku from './../components/shinjuku/SecondScreenShinjuku.vue'
+import ThirdScreenShinjuku from './../components/shinjuku/ThirdScreenShinjuku.vue'
+import FourthScreenShinjuku from './../components/shinjuku/FourthScreenShinjuku.vue'
+import FifthScreenShinjuku from './../components/shinjuku/FifthScreenShinjuku.vue'
 
 
 export default {
   name : 'Shinjuku',
   components:{
-    FirstScreen,
-    SecondScreen,
-    ThirdScreen,
-    FourthScreen,
-    FifthScreen
+    FirstScreenShinjuku,
+    SecondScreenShinjuku,
+    ThirdScreenShinjuku,
+    FourthScreenShinjuku,
+    FifthScreenShinjuku
     },
   
 };

@@ -39,7 +39,7 @@ export default {
  
 .wrapper {
   height:92vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/asakusa/asakusa.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position:relative;

@@ -10,12 +10,12 @@
     <div class="colonne4">
       
       <div id="text3">Le menu est basé sur les recettes du grand-père du propriétaire. Ils ont une variété d'articles classiques parmi lesquels choisir, avec des prix inférieurs à 1 000 ¥. Si vous ne savez pas quoi obtenir, essayez leur menu signature «Omumaki», qui est des nouilles sautées enveloppées dans une omelette. Le restaurant sert également une délicieuse carte de desserts, ce qui en fait un endroit idéal pour passer une pause l'après-midi si vous êtes entre les repas.</div>
-      <img class="image_left" src="./../../assets/nourriture_asakusa1.jpg"/>
+      <img class="image_left" src="./../../assets/asakusa/nourriture_asakusa1.jpg"/>
     </div>
 
   <div class="colonne5">
    
-    <img class="image_right" src="./../../assets/nourriture_asakusa2.jpg"/>
+    <img class="image_right" src="./../../assets/asakusa/nourriture_asakusa2.jpg"/>
     <div id="text3bis">Il existe également l'un des meilleurs et des plus célèbres magasins de ramen d'Asakusa; Yoroiya. Asakusa est l'un des ramen mechas de Tokyo et Yoroiya est la boutique la plus célèbre du quartier. Le magasin est très proche de l'emblématique Sensoji, situé juste à côté de la rue commerçante animée de Nakamise. Vous pouvez toujours vous attendre à voir une ligne se former à l'extérieur, car la célèbre boutique est appréciée des Tokyoïtes et des touristes.
 </div>
   </div>
@@ -40,31 +40,6 @@ created () {
   destroyed () {
     window.removeEventListener('scroll', this.oui);
   },
-
-  methods: {
-    oui : function(){
-       var prevScrollpos = window.pageYOffset;
-        
-        window.onscroll = function() {
-
-        var currentScrollpos = window.pageYOffset;
-          if(prevScrollpos > currentScrollpos) {
-            console.log('top')
-                document.getElementById("navbar").style.top = "0";
-          } 
-
-          else {
-            console.log('bot')
-
-                document.getElementById("navbar").style.top = "-100px";
-          }
-
-        prevScrollpos = currentScrollpos;
-
-      }
-      }
-      }
-
 
 };
 

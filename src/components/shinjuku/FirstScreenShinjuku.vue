@@ -42,7 +42,7 @@ export default {
 
   height:92vh;
 
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/bg.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/shinjuku/bg.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

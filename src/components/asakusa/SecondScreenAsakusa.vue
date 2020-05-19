@@ -5,8 +5,7 @@
   <div class="container">
     <ul id="list" class="colonne1">
       <div id="menu">
-      
-        <li
+            <li
           @mouseover="hover = true"
           @mouseleave="hover = false"
           :class="{ active: hover}"
@@ -27,16 +26,19 @@
       </div>
     </ul>
 
+      
+
+
   <div  class="colonne2">
     
-    <img class="image_left" src="./../../assets/asakusa2.jpg"/>
+    <img class="image_left" src="./../../assets/asakusa/asakusa2.jpg"/>
     <div id="text2">Asakusa est connu des touristes pour son temple bouddhiste Sensō-ji (浅草寺), dédié à la déesse bodhisattva Kannon. Le temple avec sa pagode à quatre étages, se trouve au bout d'une grande allée commerçante : Nakamise-dōri.</div>
   </div>
 
   <div  class="colonne3">
    
     <div id="text2bis">Un peu excentré par rapport au reste de la ville (et surtout son centre très vivant et moderne dont Shinjuku, Shibuya et Roppongi sont les quartiers les plus représentatifs), Asakusa n'en demeure pas moins un quartier très prisé des touristes : on y trouve de nombreux hôtels, dont la plupart sont moins chers qu'ailleurs en ville, et les restaurants et petites échoppes artisanales sont nombreux.</div>
-    <img class="image_right" src="./../../assets/asakusa3.jpg"/>
+    <img class="image_right" src="./../../assets/asakusa/asakusa3.jpg"/>
   </div>
 
 

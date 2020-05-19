@@ -32,14 +32,14 @@
 
   <div  class="colonne2">
     
-    <img class="image_left" src="./../../assets/asakusa2.jpg"/>
-    <div id="text2">Lorem  ici all ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <img class="image_left" src="./../../assets/shinjuku/nightShinjuku.jpg"/>
+    <div id="text2">La figure du samouraï, sorte de chevalier du japon médiéval, est une des icônes de la culture nippone. A Tokyo, en plein coeur du quartier de Shinjuku, le musée du samouraï présente les plus belles pièces historiques de ces emblématiques guerriers en armure.</div>
   </div>
 
   <div  class="colonne3">
    
-    <div id="text2bis">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <img class="image_right" src="./../../assets/asakusa3.jpg"/>
+    <div id="text2bis">Avec une superficie de 58,3 ha et une circonférence de 3,5 kilomètres, les jardins mélangent trois styles distincts : anglais, français et japonais. Il y a plus de 20 000 arbres, incluant approximativement 1 500 cerisiers qui fleurissent à différentes périodes selon l'espèce : fin mars pour les shidare (cerisier pleurant), début avril pour les somei (cerisier de Tokyo), jusqu'à fin avril pour les cerisier de Kanzan. On trouve également dans ce parc des cèdres de l'Himalaya majestueux, qui montent au-dessus du reste des arbres en parc, tulipier de Virginie, des cyprès, et des platanes, qui ont été plantés pour la première fois au Japon dans les jardins impériaux.</div>
+    <img class="image_right" src="./../../assets/shinjuku/parcShinjuku.jpg"/>
   </div>
 
 
