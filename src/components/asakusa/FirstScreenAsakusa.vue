@@ -43,7 +43,8 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   position:relative;
-  background-size: cover;}
+  background-size: cover;
+  }
 
 .flexContainer{
   display: flex;

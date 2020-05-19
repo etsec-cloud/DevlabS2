@@ -9663,8 +9663,29 @@ export default {
               },
             },
           },
-         })
-
+         }) 
+         map.on('mousemove', 'shinjuku', function() {
+           var coordinates = [139.708742, 35.702567]
+              new mapboxgl.Popup()
+              .setLngLat(coordinates)
+              .setHTML('Shinjuku')
+              .addTo(map);
+        });
+         map.on('mousemove', 'shibuya', function() {
+           var coordinates = [139.696113, 35.669036]
+              new mapboxgl.Popup()
+              .setLngLat(coordinates)
+              .setHTML('Shibuya')
+              .addTo(map);
+        });
+         map.on('mousemove', 'maine', function() {
+           var coordinates = [139.797141 ,35.717151 ]
+              new mapboxgl.Popup()
+              .setLngLat(coordinates)
+              .setHTML('Asakusa')
+              .addTo(map);
+        });
+        
       
       map.on('click', 'maine', function(e) {
         window.location.href = "http://localhost:8080/#/Asakusa";
