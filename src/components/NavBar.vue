@@ -42,12 +42,26 @@ export default {
 
             }
         },
+<<<<<<< HEAD
 
    
     
 };
   
 
+=======
+  };
+  methods: {
+  onScroll ();{
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+    if (currentScrollPosition < 0) {
+      return
+    }
+    this.showNavbar = currentScrollPosition < this.lastScrollPosition
+    this.lastScrollPosition = currentScrollPosition
+  } 
+}
+>>>>>>> c24f7ee2a3218798ca8a2c53c11ec9a30ecaa06c
      
 </script>
 <style>
@@ -119,7 +133,6 @@ nav{
   background-color: white;
   transition: top 0.5s;
 }
-
 nav .menu-item {
     color: #000;
     padding: 10px 0;
