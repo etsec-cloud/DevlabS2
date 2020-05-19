@@ -15,6 +15,8 @@ export default {
     name:'NavBar',
         data(){
             return{
+                showNavbar: true,
+                lastScrollPosition: 0,
                 links: [
                     {
                         id: 0,
@@ -40,10 +42,73 @@ export default {
 
             }
         },
+    methods: {
+    onScroll :function(){
+        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+        if (currentScrollPosition < 0) {
+        return
+        }
+        this.showNavbar = currentScrollPosition < this.lastScrollPosition
+        this.lastScrollPosition = currentScrollPosition
+        } 
     }
+};
+  
+
      
 </script>
 <style>
+.cl-effect-21 a {
+	padding: 10px;
+	color: #000000;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: rgba(2, 2, 2, 0.521);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.cl-effect-21 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: rgba(2, 2, 2, 0.521);
+}
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
 nav{
   position:fixed;
   left:0;
@@ -62,64 +127,6 @@ nav{
   top: 0;
   width: 100%;
 }
-
-.cl-effect-21 a {
-	padding: 10px;
-	color: #000000;
-	font-weight: 700;
-	text-shadow: none;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-.cl-effect-21 a::before,
-.cl-effect-21 a::after {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: rgba(2, 2, 2, 0.521);
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-
-.cl-effect-21 a::before {
-	top: 0;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-
-.cl-effect-21 a::after {
-	bottom: 0;
-	-webkit-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	transform: translateY(10px);
-}
-
-.cl-effect-21 a:hover,
-.cl-effect-21 a:focus {
-	color: rgba(2, 2, 2, 0.521);
-}
-
-.cl-effect-21 a:hover::before,
-.cl-effect-21 a:focus::before,
-.cl-effect-21 a:hover::after,
-.cl-effect-21 a:focus::after {
-	opacity: 1;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	transform: translateY(0px);
-}
-
-
 
 nav .menu-item {
     color: #000;

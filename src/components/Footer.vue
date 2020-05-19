@@ -41,6 +41,8 @@ export default {
      
 </script>
 <style>
+
+@media screen and (min-width: 981px){
 footer{
     background-color: rgb(31, 31, 31);
     margin: auto;
@@ -48,12 +50,30 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 5vh;
+    height: 9vh;
 }
 
 footer .menu-item  {
     color: inherit;
     text-decoration: none;
+}
+}
+
+@media screen and (max-width: 980px){
+footer{
+    background-color: rgb(31, 31, 31);
+    margin: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 9vh;
+}
+
+footer .menu-item  {
+    color: inherit;
+    text-decoration: none;
+}
 }
 
 </style>
