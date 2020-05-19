@@ -1,6 +1,8 @@
 <template>
 <div>
-  <h1  id="dota" class="titreSec"> Nourriture </h1>
+  <span id="dota"></span>
+  <h1  id="h2" class="titreSec"> Nourriture </h1>
+
 <div class="container">
 
   <div class="colonne1"></div>

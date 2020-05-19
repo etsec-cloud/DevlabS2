@@ -1,7 +1,7 @@
 <template>
 <div>
-    <h1 id="vcs" class="titreSec" >Spécialités</h1>
-
+  <span id="vcs"></span>
+    <h1 id="h4" class="titreSec" >Spécialités</h1>
 <div class="container">
   <div class="colonne1"></div>
 
@@ -21,9 +21,6 @@
 </div>
 
 </template>
-
-
-
 
 <script>
 export default {

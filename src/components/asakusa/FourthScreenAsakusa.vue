@@ -1,6 +1,8 @@
 <template>
 <div>
-    <h1 id="cs" class="titreSec">Lieux incontournables</h1>
+  <span id="cs"></span>
+    <h1 id="h3" class="titreSec">Lieux incontournables</h1>
+
 <div class="container">
 
   <div class="colonne1"></div>

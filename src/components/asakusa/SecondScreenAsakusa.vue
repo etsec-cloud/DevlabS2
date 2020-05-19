@@ -1,5 +1,6 @@
 <template>
 <div>
+  <span id="lol"></span>
   <h1 id="h1" class="titreSec">Culture/Evènement</h1>
   <div class="container">
     <ul id="list" class="colonne1">
@@ -73,6 +74,7 @@ export default {
       var body = document.querySelector('#app');
         body.classList.remove("bgcol");
     },
+    
 
    bold: function(){
      //element dans le container
@@ -85,7 +87,9 @@ export default {
       var id2 = document.getElementById('2');
       var id3 = document.getElementById('3');
       var id4 = document.getElementById('4');
-      if (window.pageYOffset > (colonne1.offsetTop))  { 
+      
+
+      if (window.pageYOffset  > (colonne1.offsetTop ) )  { 
           id1.classList.add("text1maj");
       }
       if (window.pageYOffset > (colonne2.offsetTop)) {

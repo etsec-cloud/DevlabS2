@@ -1,5 +1,5 @@
 <template>
-    <nav class="cl-effect-21">
+    <nav id="navbar" class="cl-effect-21">
         <router-link class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
@@ -42,22 +42,16 @@ export default {
 
             }
         },
-    methods: {
-    onScroll :function(){
-        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-        if (currentScrollPosition < 0) {
-        return
-        }
-        this.showNavbar = currentScrollPosition < this.lastScrollPosition
-        this.lastScrollPosition = currentScrollPosition
-        } 
-    }
+    
 };
   
 
      
 </script>
 <style>
+.hide{
+    top: -80px;
+}
 .cl-effect-21 a {
 	padding: 10px;
 	color: #000000;
@@ -121,11 +115,6 @@ nav{
   justify-content: space-around;
   height: 8vh;
   background-color: white;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 nav .menu-item {
