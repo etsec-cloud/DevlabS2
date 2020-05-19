@@ -43,19 +43,23 @@ created () {
   methods: {
     oui : function(){
        var prevScrollpos = window.pageYOffset;
+
         window.onscroll = function() {
 
         var currentScrollpos = window.pageYOffset;
+
         if(prevScrollpos > currentScrollpos) {
-              document.getElementById("navbar").style.top = "0";
+
+              document.getElementById("navbar").classList.add('hide');
         } else {
-              document.getElementById("navbar").style.top = "-100px";
+              document.getElementById("navbar").classList.remove('hide');
+
         }
 
         prevScrollpos = currentScrollpos;
 
-      }
-      }
+          }
+        }
       }
 
 
