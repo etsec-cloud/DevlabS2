@@ -33,38 +33,6 @@
 <script>
 export default {
   name : 'ThirdScreenAsakusa',
-created () {
-    window.addEventListener('scroll', this.oui);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.oui);
-  },
-
-  methods: {
-    oui : function(){
-       var prevScrollpos = window.pageYOffset;
-        
-        window.onscroll = function() {
-
-        var currentScrollpos = window.pageYOffset;
-          if(prevScrollpos > currentScrollpos) {
-            console.log('top')
-                document.getElementById("navbar").style.top = "0";
-          } 
-
-          else {
-            console.log('bot')
-
-                document.getElementById("navbar").style.top = "-100px";
-          }
-
-        prevScrollpos = currentScrollpos;
-
-      }
-      }
-      }
-
-
 };
 
 

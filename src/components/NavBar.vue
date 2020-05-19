@@ -1,8 +1,8 @@
 <template>
 
     <nav id="navbar" class="cl-effect-21">
-        <span >
-            <img v-on:click="burgerAnime" id="toggler" height="30vh" src="./../assets/burger.svg"></span>
+        <span id="toggler" >
+            <img v-on:click="burgerAnime"  height="30vh" src="./../assets/burger.svg"></span>
         <router-link id="bigmenu" class="menu-item"
             v-for="routes in links"
             v-bind:key="routes.id"
