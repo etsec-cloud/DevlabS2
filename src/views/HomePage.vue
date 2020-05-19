@@ -1,5 +1,6 @@
 <template>
 <div id="app">
+ 
     <mapbox
       access-token= "pk.eyJ1IjoiZXQtc2VjIiwiYSI6ImNrOG9nZjJ0dDA0aXgzbXBzcjlzdnh2MDQifQ.VApXtOITuEEVc3pcjaUYxw"
       :map-options="{
@@ -26,8 +27,11 @@ import Mapbox from 'mapbox-gl-vue'
 export default {
   components: { Mapbox },
   methods: {
+     
+
    
     loaded(map) {
+      loadingSpinner(false);
        map.addLayer({
         id: 'maine',
         type: 'fill',
@@ -9686,6 +9690,7 @@ export default {
               .addTo(map);
         });
         
+        
       
       map.on('click', 'maine', function(e) {
         window.location.href = "http://localhost:8080/#/Asakusa";
@@ -9700,6 +9705,7 @@ export default {
         window.location.href = "http://localhost:8080/#/Shibuya";
       });
     },
+    
   },
 }
 </script>
@@ -9708,4 +9714,5 @@ export default {
 #map {
   height: 100vh;
 }
+
 </style>
