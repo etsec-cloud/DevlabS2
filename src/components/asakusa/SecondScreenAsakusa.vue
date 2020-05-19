@@ -7,9 +7,6 @@
       <div id="menu">
       
         <li
-          v-on:mouseover="yo"
-          v-on:mouseleave="ya"
-
           @mouseover="hover = true"
           @mouseleave="hover = false"
           :class="{ active: hover}"
@@ -33,12 +30,12 @@
   <div  class="colonne2">
     
     <img class="image_left" src="./../../assets/asakusa2.jpg"/>
-    <div id="text2">Lorem  ici all ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div id="text2">Asakusa est connu des touristes pour son temple bouddhiste Sensō-ji (浅草寺), dédié à la déesse bodhisattva Kannon. Le temple avec sa pagode à quatre étages, se trouve au bout d'une grande allée commerçante : Nakamise-dōri.</div>
   </div>
 
   <div  class="colonne3">
    
-    <div id="text2bis">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem  ici alll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div id="text2bis">Un peu excentré par rapport au reste de la ville (et surtout son centre très vivant et moderne dont Shinjuku, Shibuya et Roppongi sont les quartiers les plus représentatifs), Asakusa n'en demeure pas moins un quartier très prisé des touristes : on y trouve de nombreux hôtels, dont la plupart sont moins chers qu'ailleurs en ville, et les restaurants et petites échoppes artisanales sont nombreux.</div>
     <img class="image_right" src="./../../assets/asakusa3.jpg"/>
   </div>
 
@@ -66,15 +63,6 @@ export default {
     window.removeEventListener('scroll', this.bold);
   },
   methods: {
-    yo:function(){
-      var body = document.querySelector('#app');
-        body.classList.add("bgcol");
-    },
-    ya:function(){
-      var body = document.querySelector('#app');
-        body.classList.remove("bgcol");
-    },
-    
 
    bold: function(){
      //element dans le container
@@ -136,10 +124,6 @@ export default {
 
 
 <style>
-.bgcol{
-  background-color: rgb(4, 4, 56);
-}
-
 
 li{
   list-style: none;
@@ -152,10 +136,8 @@ ul{
   position:static;
   top: 50%; 
   left: 50%; 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   width: 90vw;
-  margin-left: 52vw;
-  margin-top: 45vh;
 }
 .container{
 	display: flex;
@@ -169,11 +151,16 @@ ul{
   width: 20%;
   margin-top: 16vh;
 }
+
+#h1{
+  position:relative;
+  z-index: 1;
+}
+
 .colonne1{
   width: 20%;
-  margin-top: 50px;
   justify-content: center;
-  transition-duration:1s,
+  transition-duration:1s;
 }
 .trait{
   background-color: black;
@@ -202,7 +189,6 @@ ul{
 } 
 .colonne2{
   width: 37%;
-  margin-bottom: 20vh;
 }
 .image_left{
   width: 100%;
@@ -214,7 +200,7 @@ ul{
   }
 .colonne3{
   width: 37%;
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 #text2bis{
   text-align: center;

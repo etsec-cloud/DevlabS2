@@ -9,14 +9,15 @@
 
     <div class="colonne4">
       
-      <div id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div id="text3">Le menu est basé sur les recettes du grand-père du propriétaire. Ils ont une variété d'articles classiques parmi lesquels choisir, avec des prix inférieurs à 1 000 ¥. Si vous ne savez pas quoi obtenir, essayez leur menu signature «Omumaki», qui est des nouilles sautées enveloppées dans une omelette. Le restaurant sert également une délicieuse carte de desserts, ce qui en fait un endroit idéal pour passer une pause l'après-midi si vous êtes entre les repas.</div>
       <img class="image_left" src="./../../assets/nourriture_asakusa1.jpg"/>
     </div>
 
   <div class="colonne5">
    
     <img class="image_right" src="./../../assets/nourriture_asakusa2.jpg"/>
-    <div id="text3bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text3bis">Il existe également l'un des meilleurs et des plus célèbres magasins de ramen d'Asakusa; Yoroiya. Asakusa est l'un des ramen mechas de Tokyo et Yoroiya est la boutique la plus célèbre du quartier. Le magasin est très proche de l'emblématique Sensoji, situé juste à côté de la rue commerçante animée de Nakamise. Vous pouvez toujours vous attendre à voir une ligne se former à l'extérieur, car la célèbre boutique est appréciée des Tokyoïtes et des touristes.
+</div>
   </div>
 
 <span v-on:mouseover="mouseOver" class="text1"></span>
@@ -73,17 +74,23 @@ created () {
 
 <style>
 
+#h2{
+  margin-top: -5vh;
+}
 .colonne4{
   width: 37%;
 }
 #text3{
   text-align: center;
+  margin-bottom: 2vh;
 }
 .colonne5{
   width: 37%;
+  margin-top: -5vh;
 }
 #text3bis{
   text-align: center;
+  margin-top: 2vh;
 }
 @media screen and (max-width: 900px) {
 

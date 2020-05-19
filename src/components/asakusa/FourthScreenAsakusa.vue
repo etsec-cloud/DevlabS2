@@ -10,11 +10,11 @@
 
   <div  class="colonne6">
     <img src="./../../assets/asakusaMagasin.jpg" class="image_left"/>
-    <div id="text4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text4">C'est ici qu'il faut se rendre pour visiter les boutiques d'ustensiles de cuisine, fréquentées à la fois par les professionnels de la restauration et les badauds désireux de ramener un souvenir typique du Japon : céramiques, bols, baguettes, théière, verres etc. C'est également dans cette rue que se trouvent les boutiques de faux aliments en cire. Ces représentations impérissables et très réalistes sont cependant bien plus chers que leurs originaux périssables.</div>
   </div>
 
   <div class="colonne7">
-    <div id="text4bis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div id="text4bis">Sur le toit d'un gratte-ciel situé de l'autre côté du fleuve Sumida, se trouve la flamme de l'immeuble de la brasserie Asahi conçue par Philippe Starck. Bien qu'elle fût censée à l'origine représenter à la fois une bulle de bière qui s'élève et une flèche pointée vers l'avenir, les japonais la voient en général comme une grande crotte de chien... : la ville n'a pas autorisé son positionnement vertical, considérant que l'ensemble dépassait les hauteurs autorisées de l'époque, la statue est restée ainsi couchée depuis.</div>
     <img class="image_right" src="./../../assets/asakusaPorte.jpg"/>
   </div>
 
@@ -62,11 +62,12 @@ export default {
 
 #text4{
   text-align: center;
+  margin-top: 2vh;
 }
 
 .colonne7{
   width: 37%;
-  margin-top: 6vh;
+  margin-top: -1vh;
 }
 
 #text4bis{
