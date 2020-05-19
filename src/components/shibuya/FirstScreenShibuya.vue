@@ -1,12 +1,11 @@
 <template>
 
 <div class="wrapper">
-
-    <div class="flexContainer">
-      <h1>Shinjuku</h1>
-      <img class="kanji" src="./../../assets/shibuya.svg">
-    </div>
-      <span v-on:click="scroll" class="icone"></span>
+  <div class="flexContainer">
+    <h1 class="titre">Shibuya</h1>
+    <img class="kanji" src="./../../assets/shibuya.svg">
+  </div>
+    <span v-on:click="scroll" class="icone"></span>
 
 </div>
 
@@ -17,7 +16,7 @@
 
 <script>
 export default {
-  name : 'FirstScreen',
+  name : 'FirstScreenShibuya',
   methods: {
     scroll: function() {
 
@@ -39,19 +38,13 @@ export default {
 <style scoped>
  
 .wrapper {
-
   height:92vh;
-
-  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/shinjuku/bg.jpg" ) ;
+  background:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("./../../assets/shibuya/shibuya.first.jpg" ) ;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-
+  position:relative;
   background-size: cover;
-  transition-duration: 1s;
-
   }
-
 
 .flexContainer{
   display: flex;
@@ -59,11 +52,17 @@ export default {
   justify-content: space-around;
   align-items: center;
   color:white;
-  font-size: 8em;
+  font-size: 6em;
   line-height: 100px;
 }
+
 .kanji{
-  width: 50vw;
+  width: 30vw;
+}
+
+.titre {
+  font-size: 10vw;
+  margin-top: 200px;
 }
 
 .icone {
@@ -77,7 +76,13 @@ left: 50%;
 bottom: 5%;
 transform: translate(0%, -50%);
 cursor: pointer ;
-
 }
 
+
+@media screen and (max-width: 900px){
+.wrapper {
+  width: 100%; 
+  background-size:cover;
+  }
+}
 </style>

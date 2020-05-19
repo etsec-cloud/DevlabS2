@@ -34,17 +34,12 @@
 <script>
 export default {
   name : 'ThirdScreenAsakusa',
-<<<<<<< HEAD
 created () {
     window.addEventListener('scroll', this.oui);
   },
   destroyed () {
     window.removeEventListener('scroll', this.oui);
   },
-=======
-
-
->>>>>>> 91f0b7686b9afeb80f403e36d735abb787b7cc51
 
 };
 
